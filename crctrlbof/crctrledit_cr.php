@@ -706,19 +706,19 @@ if ($rec_result) {
 												<div class="row">
 													<div class="col-md-4">
 														<div class="form-group">
-															<label class="font-weight-bold">ชื่อ-สกุล :</label>
+															<label>ชื่อ-สกุล :</label>
 															<input type="text" id="e_user_fullname" name ="e_user_fullname" value="<?php echo $e_user_fullname ?>" class="form-control input-sm font-small-3" disabled >
 														</div>
 													</div>
 													<div class="col-md-4">
 														<div class="form-group">
-															<label class="font-weight-bold">หน่วยงาน : </label>
+															<label>หน่วยงาน : </label>
 															<input type="text" id="e_user_th_pos_name" name ="e_user_th_pos_name" value="<?php echo $e_user_th_pos_name ?>" class="form-control input-sm font-small-3" disabled>
 														</div>
 													</div>
 													<div class="col-md-4">
 														<div class="form-group">
-															<label class="font-weight-bold">ผู้บังคับบัญชา :</label>
+															<label>ผู้บังคับบัญชา :</label>
 															<input type="text" id="e_user_manager_name" name="e_user_manager_name" value="<?php echo $e_user_manager_name ?>" class="form-control input-sm font-small-3" disabled>
 														</div>
 													</div>
@@ -726,12 +726,12 @@ if ($rec_result) {
 												<div class="row">
 													<div class="col-md-4">
 														<div class="form-group">
-															<label class="font-weight-bold">E-mail:</label>
+															<label>E-mail:</label>
 															<input type="text" id="e_user_email" name="e_user_email" value="<?php echo $e_user_email ?>" class="form-control input-sm font-small-3" disabled>
 														</div>
 													</div>
 													<div class="col-md-4">
-														<label class="font-weight-bold">เบอร์โทรศัพท์:</label>
+														<label>เบอร์โทรศัพท์:</label>
 														<class="text-muted font-weight-bold">(999) 999-9999 <font class="text text-danger font-weight-bold"> ***</font>
 															<div class="form-group">
 																<input type="text" class="form-control phone-inputmask form-control input-sm font-small-3" id="phone_mask" name="phone_mask" value="<?php echo $phone_mask ?>" placeholder="ระบุหมายเลขโทรศัพท์" / readonly>
@@ -745,7 +745,7 @@ if ($rec_result) {
 													<div class="row">
 														<div class="col-md-4">
 															<div class="form-group">
-																<label class="font-weight-bold">รหัสลูกค้า :<font class="text text-danger font-weight-bold"> *</font></label>
+																<label>รหัสลูกค้า :<font class="text text-danger font-weight-bold"> *</font></label>
 																<? if($cr_cust_code !="") {?>	
 																	<input type="text" id="cr_cust_code" name ="cr_cust_code" value="<?php echo $cr_cust_code ?>" class="form-control input-sm font-small-3" placeholder="พิมพ์ชื่อ หรือ รหัสลูกค้า" required>
 																	<?php } 
@@ -756,13 +756,13 @@ if ($rec_result) {
 														</div>
 														<div class="col-md-4">
 															<div class="form-group">
-																<label class="font-weight-bold">ชื่อลูกค้า : </label>
+																<label>ชื่อลูกค้า : </label>
 																<input type="text" id="crstm_cus_name" name ="crstm_cus_name" value="<?php echo $crstm_cus_name ?>" class="form-control input-sm font-small-3">
 															</div>
 														</div>
 														<div class="col-md-4">
 															<div class="form-group">
-																<label class="font-weight-bold">เลขประจำตัวผู้เสียภาษี :</label>
+																<label>เลขประจำตัวผู้เสียภาษี :</label>
 																<input type="text" id="cus_tax_nbr3" name="cus_tax_nbr3" value="<?php echo $cus_tax_nbr3 ?>" class="form-control input-sm font-small-3">
 															</div>
 														</div>
@@ -771,25 +771,25 @@ if ($rec_result) {
 													<div class="row">
 														<div class="col-md-4">
 															<fieldset class="form-group">
-																<label for="placeTextarea" class="font-weight-bold">ที่อยู่ :</label>
+																<label for="placeTextarea">ที่อยู่ :</label>
 																<textarea  name="cus_street" id="cus_street" class="form-control input-sm font-small-3"  id="placeTextarea" rows="3" placeholder="ที่อยู่" style="line-height:1.5rem;"> <?php echo $cus_street; ?></textarea>
 															</fieldset>	
 														</div>
 														<div class="col-md-2">
 															<div class="form-group">
-																<label class="font-weight-bold">จังหวัด :</label>
+																<label>จังหวัด :</label>
 																<input type="text" id="cus_city" name="cus_city" value="<?php echo $cus_city ?>" class="form-control input-sm font-small-3">
 															</div>
 														</div>
 														<div class="col-md-2">
 															<div class="form-group">
-																<label class="font-weight-bold">ประเทศ :</label>
+																<label>ประเทศ :</label>
 																<input type="text" id="cus_country" name="cus_country" value="<?php echo $cus_country ?>" class="form-control input-sm font-small-3">
 															</div>
 														</div>
 														<div class="col-md-4">
 															<div class="form-group">
-																<label class="font-weight-bold">เงื่อนไขการชำระเงิน :</label>
+																<label>เงื่อนไขการชำระเงิน :</label>
 																<input type="text" id="cus_terms_paymnt" name="cus_terms_paymnt" value="<?php echo $cus_terms_paymnt ?>" class="form-control input-sm font-small-3">
 															</div>
 														</div>
@@ -1106,7 +1106,7 @@ if ($rec_result) {
 													<div class="row">
 														<div class="col-md-3">
 															<input type="radio"  id="cus_conf_no" name="cus_conf" value="0" disabled <?php if($cus_conf_yes=='0'){ echo "checked"; }?>>
-															<label class="font-weight-bold" for="cus_conf_no"> วงเงินลูกค้าใหม่</label>
+															<label for="cus_conf_no"> วงเงินลูกค้าใหม่</label>
 														</div>	
 														<div class="col-md-3">
 															<input type="radio" id="cus_conf_yes" name="cus_conf" value="1" disabled <?php if($cus_conf_yes=='1'){ echo "checked"; }?>>
@@ -1116,7 +1116,7 @@ if ($rec_result) {
 													<div class="row">
 														<div class="col-md-3">
 															<input type="radio"  id="cusold_conf_yes" name="chk_rdo" value="C1" disabled <?php if($cusold_conf_yes=='C1') { echo "checked"; }?>>
-															<label class="font-weight-bold" for="cusold_conf_yes"> ปรับเพิ่มวงเงิน</label>
+															<label for="cusold_conf_yes"> ปรับเพิ่มวงเงิน</label>
 														</div>	
 														<!--<div class="col-md-3">
 															<input type="radio"  id="cusold1_conf_yes" name="chk_rdo" value="C2" disabled <?php if($cusold_conf_yes=='C2') { echo "checked"; }?>>
@@ -1130,17 +1130,17 @@ if ($rec_result) {
 													<div class="row">
 														<div class="col-md-3">
 															<input type="radio"  id="term_conf_yes" name="rdo_conf1" value="old" disabled <?php if($crstm_chk_term=='old'){ echo "checked"; }?>>
-															<label class="font-weight-bold" for="cus_conf_yes">เงื่อนไขการชำระเงินเดิม</label>
+															<label for="cus_conf_yes">เงื่อนไขการชำระเงินเดิม</label>
 														</div>
 														<div class="col-md-3">
 															<input type="radio"  id="chg_term_conf_yes" name="rdo_conf1" value="change" disabled <?php if($crstm_chk_term=='change'){ echo "checked"; }?>>
-															<label class="font-weight-bold" for="cus_conf_yes">เปลี่ยนเงื่อนไขการชำระเงินใหม่จาก</label>
+															<label for="cus_conf_yes">เปลี่ยนเงื่อนไขการชำระเงินใหม่จาก</label>
 														</div>
 													</div>
 													<div class="row">
 														<div class="col-md-3">
 															<fieldset>
-																<label for="check_same" class="font-weight-bold">เงื่อนไขการชำระเงินเดิม:</label>
+																<label for="check_same">เงื่อนไขการชำระเงินเดิม:</label>
 															</fieldset>
 														</div>
 														<div class="col-md-3">
@@ -1148,12 +1148,12 @@ if ($rec_result) {
 														</div>
 														<div class="col-md-3">
 															<fieldset>
-																<label class="font-weight-bold">โปรดระบุเพิ่ม: (ถ้ามี)</label>
+																<label>โปรดระบุเพิ่ม: (ถ้ามี)</label>
 															</fieldset>
 														</div>
 														<div class="col-md-3">
 															<div class="form-group">
-																<!--<label class="font-weight-bold">เปลี่ยนจาก</label>-->
+																<!--<label>เปลี่ยนจาก</label>-->
 																<select data-placeholder="Select a doc type ..." class="form-control input-sm border-warning font-small-3 select2" id="term_desc_add" name="term_desc_add" disabled >
 																	<option value="" selected>--- เลือกเงื่อนไขการชำระเงินเพิ่ม ---</option>
 																	<?php
@@ -1174,7 +1174,7 @@ if ($rec_result) {
 													<div class="row">
 														<div class="col-md-3">
 															<fieldset>
-																<label for="check_same" class="font-weight-bold">ขอเปลี่ยนเงื่อนไขการชำระเงินใหม่ จาก:</label>
+																<label for="check_same">ขอเปลี่ยนเงื่อนไขการชำระเงินใหม่ จาก:</label>
 															</fieldset>
 														</div>
 														<div class="col-md-3">
@@ -1182,7 +1182,7 @@ if ($rec_result) {
 														</div>
 														<div class="col-md-2">
 															<fieldset>
-																<label class="font-weight-bold">เปลี่ยนเงื่อนไข:</label>
+																<label>เปลี่ยนเงื่อนไข:</label>
 															</fieldset>
 														</div>
 														<div class="col-md-4">
@@ -1425,15 +1425,15 @@ if ($rec_result) {
 															</div>
 															
 															<div class="col-md-3">
-																<label class="font-weight-bold" for="cus_conf_yes">Group:</label>
+																<label for="cus_conf_yes">Group:</label>
 															</div>
 															<div class="col-md-2">
 																<input type="radio" name="crstm_scgc" id="crstm_scgc" value="true" disabled <?php if ($crstm_scgc==true){ echo "checked"; }?>>
-																<label class="font-weight-bold">Tiles</label>
+																<label>Tiles</label>
 															</div>
 															<div class="col-md-2">
 																<input type="radio" name="crstm_scgc" id="crstm_scgc" value="false" disabled <?php if ($crstm_scgc==false){ echo "checked"; }?>>
-																<label class="font-weight-bold">Geoluxe</label>
+																<label>Geoluxe</label>
 															</div>
 															<div class="col-md-5"></div>
 															
@@ -1690,14 +1690,14 @@ if ($rec_result) {
 															<!---------------->
 															<div class="col-md-12">
 																<fieldset class="form-group">
-																	<label for="placeTextarea" class="font-weight-bold">ความเห็น / เหตุผลที่เสนอขอวงเงิน :</label>
+																	<label for="placeTextarea">ความเห็น / เหตุผลที่เสนอขอวงเงิน :</label>
 																	<textarea  name="crstm_sd_reson" id="crstm_sd_reson" class="form-control input-sm font-small-3" id="placeTextarea" rows="5" style="line-height:1.5rem;" readonly><?php echo $crstm_sd_reson; ?></textarea>
 																</fieldset>	
 															</div>
 															<?php if(($crstm_rem_rearward !="") && inlist('0,01',$crstm_step_code)){ ?> 
 																<div class="col-md-12">
 																	<div class="form-group">
-																		<label for="placeTextarea" class="font-weight-bold">เหตุผลการ Rearward:<font class="text text-danger font-weight-bold"> ***</font></label>
+																		<label for="placeTextarea">เหตุผลการ Rearward:<font class="text text-danger font-weight-bold"> ***</font></label>
 																		<textarea  name="crstm_rem_rearward" id="crstm_rem_rearward" class="form-control input-sm font-small-3" id="placeTextarea" rows="5" style="line-height:1.5rem; color:red;">*** <?php echo $crstm_rem_rearward; ?> ***</textarea>
 																		<!--<textarea  name="crstm_rem_rearward" id="crstm_rem_rearward" class="form-control input-sm font-small-3" id="placeTextarea" rows="5" style="line-height:1.5rem; background:#99CC33; color:red;"><?php echo $crstm_rem_rearward; ?></textarea>-->
 																	</div>
@@ -1734,7 +1734,7 @@ if ($rec_result) {
 														<div class="row">
 															<div class="col-md-12">
 																<div class="form-group">
-																	<label class="font-weight-bold">ข้อมูลโครงการ (ถ้ามี):</label>
+																	<label>ข้อมูลโครงการ (ถ้ามี):</label>
 																</div>
 															</div>
 															
@@ -2003,7 +2003,7 @@ if ($rec_result) {
 															<div class="row">
 																<div class="col-md-12">
 																	<div class="form-group">
-																		<label class="font-weight-bold">ประวัติการชำระเงินลูกค้า:</label>
+																		<label>ประวัติการชำระเงินลูกค้า:</label>
 																	</div>
 																</div>
 																<div class="col-sm-3">
@@ -2104,13 +2104,13 @@ if ($rec_result) {
 																
 																<div class="col-md-12">
 																	<fieldset class="form-group">
-																		<label for="placeTextarea" class="font-weight-bold">ความเห็นสินเชื่อ #1 : <font class="text text-danger font-weight-bold"> *</font></label>
+																		<label for="placeTextarea">ความเห็นสินเชื่อ #1 : <font class="text text-danger font-weight-bold"> *</font></label>
 																		<textarea  name="crstm_cc1_reson" id="crstm_cc1_reson" class="form-control textarea-maxlength input-sm font-small-3" placeholder="Enter upto 500 characters.." maxlength="500"  rows="5" style="line-height:1.5rem;"><?php echo $crstm_cc1_reson; ?></textarea>
 																	</div>
 																</fieldset>	
 																<!--<div class="col-md-12">
 																	<fieldset class="form-group">
-																		<label for="placeTextarea" class="font-weight-bold">Message to sales : </label>
+																		<label for="placeTextarea">Message to sales : </label>
 																		<textarea  name="crstm_detail_mail" id="crstm_detail_mail" class="form-control textarea-maxlength input-sm font-small-3" placeholder="Enter upto 200 characters.." maxlength="200"  rows="3" style="line-height:1.5rem;"><?php echo $crstm_detail_mail; ?></textarea>
 																	</fieldset>	
 																</div>-->
@@ -2119,7 +2119,7 @@ if ($rec_result) {
 																<?php if(($crstm_rem_rearward !="") && inlist('10,11',$crstm_step_code)){ ?> 
 																	<div class="col-md-12">
 																		<div class="form-group">
-																			<label for="placeTextarea" class="font-weight-bold">เหตุผลการ Rearward:<font class="text text-danger font-weight-bold"> ***</font></label>
+																			<label for="placeTextarea">เหตุผลการ Rearward:<font class="text text-danger font-weight-bold"> ***</font></label>
 																			<textarea  name="crstm_rem_rearward" id="crstm_rem_rearward" class="form-control input-sm font-small-3" id="placeTextarea" rows="5" style="line-height:1.5rem; background:#99CC33; color:white;"><?php echo $crstm_rem_rearward; ?></textarea>
 																		</div>
 																	</div>
@@ -2154,7 +2154,7 @@ if ($rec_result) {
 																</div>
 																<div class="col-md-2">
 																	<input type="checkbox"  id="del_cr1" name="del_cr1" value="1">
-																	<label class="font-weight-bold" for="cus_conf_yes">ลบรูปภาพ</label>
+																	<label for="cus_conf_yes">ลบรูปภาพ</label>
 																</div>
 															</div>
 														</div>
@@ -2165,7 +2165,7 @@ if ($rec_result) {
 															<div class="row">
 																<div class="col-md-12">
 																	<div class="form-group">
-																		<label class="font-weight-bold">Upload งบการเงินลูกค้า:</label>
+																		<label>Upload งบการเงินลูกค้า:</label>
 																	</div>
 																</div>
 															</div>
@@ -2173,17 +2173,17 @@ if ($rec_result) {
 															<div class="row">
 																<div class="col-md-6">
 																	<input type="checkbox"  id="dbd_conf_yes" name="web_conf" value="1" <?php if($dbd_conf_yes=='1'){ echo "checked"; }?> >
-																	<label class="font-weight-bold" for="cus_conf_yes">งบการเงินจากเว็บไซต์กรมพัฒนาธุรกิจ</label>
+																	<label for="cus_conf_yes">งบการเงินจากเว็บไซต์กรมพัฒนาธุรกิจ</label>
 																</div>
 																<div class="col-md-6">
 																	<input type="checkbox"  id="oth_conf_yes" name="web_conf" value="2" <?php if($dbd_conf_yes=='2'){ echo "checked"; }?> >
-																	<label class="font-weight-bold" for="cus_conf_yes">งบการเงินจากแหล่งอื่นๆ</label>
+																	<label for="cus_conf_yes">งบการเงินจากแหล่งอื่นๆ</label>
 																</div>
 															</div>
 															<div class="row">
 																<div class="col-2">
 																	<fieldset>
-																		<label for="check_same" class="font-weight-bold">งบการเงินล่าสุด:</label>
+																		<label for="check_same">งบการเงินล่าสุด:</label>
 																	</fieldset>
 																</div>
 																
@@ -2208,7 +2208,7 @@ if ($rec_result) {
 																
 																<div class="col-2">
 																	<fieldset>
-																		<label for="check_same" class="font-weight-bold">งบการเงินล่าสุด:</label>
+																		<label for="check_same">งบการเงินล่าสุด:</label>
 																	</fieldset>
 																</div>
 																
@@ -2243,7 +2243,7 @@ if ($rec_result) {
 																</div>
 																<div class="col-md-2">
 																	<input type="checkbox"  id="del_dbd" name="del_dbd" value="1">
-																	<label class="font-weight-bold" for="cus_conf_yes">ลบรูปภาพ</label>
+																	<label for="cus_conf_yes">ลบรูปภาพ</label>
 																</div>
 																<div class="col-md-4">
 																	<div class="row">
@@ -2259,7 +2259,7 @@ if ($rec_result) {
 																</div>
 																<div class="col-md-2">
 																	<input type="checkbox"  id="del_dbd1" name="del_dbd" value="1">
-																	<label class="font-weight-bold" for="cus_conf_yes">ลบรูปภาพ</label>
+																	<label for="cus_conf_yes">ลบรูปภาพ</label>
 																</div>
 																<div class="card-body  my-gallery" itemscope itemtype="http://schema.org/ImageGallery">		
 																	<div class="row">
@@ -2277,14 +2277,14 @@ if ($rec_result) {
 																	<div class="row">
 																		<div class="col-md-12">
 																			<fieldset class="form-group">
-																				<label for="placeTextarea" class="font-weight-bold">ความเห็นสินเชื่อ #2 : <font class="text text-danger font-weight-bold"> *</font></label>
+																				<label for="placeTextarea">ความเห็นสินเชื่อ #2 : <font class="text text-danger font-weight-bold"> *</font></label>
 																				<textarea  name="crstm_cc2_reson" id="crstm_cc2_reson" class="form-control textarea-maxlength input-sm font-small-3" placeholder="Enter upto 500 characters.." maxlength="500"  rows="5" style="line-height:1.5rem;"><?php echo $crstm_cc2_reson; ?></textarea>
 																			</fieldset>	
 																		</div>
 																		<?php if(($crstm_rem_rearward !="") && inlist('20,21',$crstm_step_code)){ ?> 
 																			<div class="col-md-12">
 																				<div class="form-group">
-																					<label for="placeTextarea" class="font-weight-bold">เหตุผลการ Rearward:<font class="text text-danger font-weight-bold"> ***</font></label>
+																					<label for="placeTextarea">เหตุผลการ Rearward:<font class="text text-danger font-weight-bold"> ***</font></label>
 																					<textarea  name="crstm_rem_rearward" id="crstm_rem_rearward" class="form-control input-sm font-small-3" id="placeTextarea" rows="5" style="line-height:1.5rem; background:#99CC33; color:white;"><?php echo $crstm_rem_rearward; ?></textarea>
 																				</div>
 																			</div>
@@ -2319,7 +2319,7 @@ if ($rec_result) {
 																		</div>
 																		<div class="col-md-2">
 																			<input type="checkbox"  id="del_cr2" name="del_cr2" value="1">
-																			<label class="font-weight-bold" for="cus_conf_yes">ลบรูปภาพ</label>
+																			<label for="cus_conf_yes">ลบรูปภาพ</label>
 																		</div>
 																	</div>	
 																<?php } ?>
@@ -2329,14 +2329,14 @@ if ($rec_result) {
 																	<?php if($iscan_display_c3) { ?> 
 																		<div class="col-md-12">
 																			<fieldset class="form-group">
-																				<label for="placeTextarea" class="font-weight-bold">ความเห็น Manager:</label>
+																				<label for="placeTextarea">ความเห็น Manager:</label>
 																				<textarea  name="crstm_mgr_reson" id="crstm_mgr_reson" class="form-control textarea-maxlength input-sm font-small-3" placeholder="Enter upto 200 characters.." maxlength="200"  rows="5" style="line-height:1.5rem;"><?php echo $crstm_mgr_reson; ?></textarea>
 																			</fieldset>	
 																		</div>
 																		
 																		<div class="col-md-3">
 																			<input type="radio"  id="mgr_conf_yes" name="mgr_conf" value="1" <?php if($crstm_mgr_rdo=='1'){ echo "checked"; }?> >
-																			<label class="font-weight-bold" for="cus_conf_yes"> เห็นควรอนุมัติวงเงินเป็น</label>
+																			<label for="cus_conf_yes"> เห็นควรอนุมัติวงเงินเป็น</label>
 																			
 																		</div>
 																		<div class="col-md-2">
@@ -2345,7 +2345,7 @@ if ($rec_result) {
 																		
 																		<div class="col-md-2">
 																			<input type="radio"  id="mgr_conf_yes" name="mgr_conf" value="2" <?php if($crstm_mgr_rdo=='2'){ echo "checked"; }?> >
-																			<label class="font-weight-bold" for="cus_conf_yes">ไม่เห็นควรอนุมัติ</label>
+																			<label for="cus_conf_yes">ไม่เห็นควรอนุมัติ</label>
 																		</div>
 																	<?php } ?>
 																</div>
@@ -2511,7 +2511,7 @@ if ($rec_result) {
 												type: "success",
 												title: "Submit successfully.",
 												showConfirmButton: false,
-												timer: 500,
+												timer: 10000,
 												confirmButtonClass: "btn btn-primary",
 												buttonsStyling: false
 											});
@@ -2589,7 +2589,7 @@ if ($rec_result) {
 												type: "success",
 												title: "Submit successfully.",
 												showConfirmButton: false,
-												timer: 500,
+												timer: 10000,
 												confirmButtonClass: "btn btn-primary",
 												buttonsStyling: false
 											});
@@ -2666,7 +2666,7 @@ if ($rec_result) {
 												type: "success",
 												title: "Submit successfully.",
 												showConfirmButton: false,
-												timer: 500,
+												timer: 10000,
 												confirmButtonClass: "btn btn-primary",
 												buttonsStyling: false
 											});
@@ -2746,7 +2746,7 @@ if ($rec_result) {
 												type: "success",
 												title: "Submit successfully.",
 												showConfirmButton: false,
-												timer: 500,
+												timer: 10000,
 												confirmButtonClass: "btn btn-primary",
 												buttonsStyling: false
 											});
@@ -2821,7 +2821,7 @@ if ($rec_result) {
 												type: "success",
 												title: "Submit successfully.",
 												showConfirmButton: false,
-												timer: 500,
+												timer: 10000,
 												confirmButtonClass: "btn btn-primary",
 												buttonsStyling: false
 											});
@@ -2894,7 +2894,7 @@ if ($rec_result) {
 										type: "success",
 										title: "Successful",
 										showConfirmButton: false,
-										timer: 1500,
+										timer: 10000,
 										confirmButtonClass: "btn btn-primary",
 										buttonsStyling: false,
 										animation: false,
@@ -2945,7 +2945,7 @@ if ($rec_result) {
 										type: "success",
 										title: "Successful",
 										showConfirmButton: false,
-										timer: 1500,
+										timer: 10000,
 										confirmButtonClass: "btn btn-primary",
 										buttonsStyling: false,
 										animation: false,
@@ -2996,7 +2996,7 @@ if ($rec_result) {
 										type: "success",
 										title: "Recall-Successfull",
 										showConfirmButton: false,
-										timer: 1500,
+										timer: 10000,
 										confirmButtonClass: "btn btn-primary",
 										buttonsStyling: false,
 										animation: false,
@@ -3046,7 +3046,7 @@ if ($rec_result) {
 										type: "success",
 										title: "Successful",
 										showConfirmButton: false,
-										timer: 1500,
+										timer: 10000,
 										confirmButtonClass: "btn btn-primary",
 										buttonsStyling: false,
 										animation: false,

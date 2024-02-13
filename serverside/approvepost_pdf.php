@@ -232,6 +232,8 @@ clearstatcache();
 			จึงเรียนมาเพื่อโปรดพิจารณาอนุมัติ <br>
 			$name_from <br>
 			$emp_th_pos_name <br></font>"; 
+			$mail_message .= $mail_no_reply;
+
 		
 			// ส่งอีเมลไปหาผู้อนุมัติคนที่ 1 crstm_email_app1
 			
@@ -293,6 +295,8 @@ clearstatcache();
 			จึงเรียนมาเพื่อโปรดพิจารณาอนุมัติ <br>
 			$name_from <br>
 			$emp_th_pos_name <br></font>"; 
+			$mail_message .= $mail_no_reply;
+
 			
 			$fileattach = array();
 			$fileattach_mailname = array();
@@ -355,6 +359,8 @@ clearstatcache();
 			จึงเรียนมาเพื่อโปรดพิจารณาอนุมัติ <br>
 			$name_from <br>
 			$emp_th_pos_name <br></font>"; 
+			$mail_message .= $mail_no_reply;
+
 			
 			$fileattach = array();
 			$fileattach_mailname = array();

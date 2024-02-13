@@ -622,7 +622,7 @@ if ($action == "crctrlapp_edit") {
 				$mail_from = $user_fullname;
 				$mail_from_email = $user_email;
 				$mail_to = $cr_next_curprocessor_email;
-				$mail_subject ="Credit 2 โปรดดำเนินการ: ใบขออนุมัติวงเงิน  $crstm_nbr ลูกค้า  $crstm_cus_name ";
+				$mail_subject = "Credit 2 โปรดดำเนินการ: ใบขออนุมัติวงเงิน  $crstm_nbr ลูกค้า  $crstm_cus_name ";
 				$mail_message = "<font style='font-family:Cordia New;font-size:19px'>เรียน แผนกสินเชื่อ (Credit 2)<br><br>
 				ใบขออนุมัติวงเงิน หมายเลข $crstm_nbr  ลูกค้า $crstm_cus_name <br>
 				Credit 2 โปรดดำเนินการในระบบ  Credit Control ด้วยค่ะ  <br><br>

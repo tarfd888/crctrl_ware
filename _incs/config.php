@@ -17,7 +17,7 @@ $key=$dbkey;
 
 $path_theme = "../theme/";
 $web_root = $_SERVER['DOCUMENT_ROOT'];
-$app_folder = "crctrl_uat_ph3_1";   // nanthaws
+$app_folder = "crctrl_ware";   // nanthaws
 $http_host = "http://".$_SERVER['HTTP_HOST']."/"; //For Test
 //$http_host = "https://smartapp3.scgceramics.com/"; //For Production
 $app_url = $http_host."$app_folder";
@@ -34,7 +34,8 @@ $mail_mgr_credit = "nuchanav@scg.com";
 
 $downloadpath = $web_root."/".$app_folder."/"."_filedownloads/";
 $uploadpath = $web_root."/".$app_folder."/"."_fileuploads/";
-$mail_no_reply = "<span style='color: red'><br><font style='font-family:Cordia New;font-size:19px'> ** NO-REPLY This eMail (กรุณาอย่า Reply Email ฉบับนี้ เพราะจะไม่มีผู้รับ) ** <br></font></span>";
+$mail_no_reply = "<span style='color: red'><br><font style='font-family:Cordia New;font-size:19px'> ** อยู่ในระหว่างการเทสระบบใช้กับสยามแวร์ ** <br></font></span>";
+//$mail_no_reply = "<span style='color: red'><br><font style='font-family:Cordia New;font-size:19px'> ** NO-REPLY This eMail (กรุณาอย่า Reply Email ฉบับนี้ เพราะจะไม่มีผู้รับ) ** <br></font></span>";
 
 //
 $encdbpwd="7GGTy0cZ0kQH8THukLEfbyKFJxXDV12zqW9BkYJsiPk,"; //for production
@@ -47,7 +48,7 @@ $decdbserv=rtrim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256, md5($dbkey), base64_decode(
 
 ////$dbserver = $decdbserv;
 $dbserver = "L0650NANTAWAS01\SQLEXPRESS";                 //10.28.101.94\SQLEXPRESS //L0650NANTAWAS01\SQLEXPRESS
-$dbname = "crctrldb_uat";
+$dbname = "crctrldb_ware";
 //$dbname = "crctrldb_uat";   // crctrldb_uat_fin  crctrldb_new
 $dbuser = "sa";
 $dbpwd = "Ta182924";     //"root"

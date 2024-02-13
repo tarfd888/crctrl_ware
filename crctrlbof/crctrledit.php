@@ -423,19 +423,19 @@ if (inlist('40,41',$crstm_step_code)) {
 													<div class="row">
 														<div class="col-md-4">
 															<div class="form-group">
-																<label class="font-weight-bold">ชื่อ-สกุล :</label>
+																<label>ชื่อ-สกุล :</label>
 																<input type="text" id="user_fullname" name ="user_fullname" value="<?php echo $user_fullname ?>" class="form-control input-sm font-small-3" disabled>
 															</div>
 														</div>
 														<div class="col-md-4">
 															<div class="form-group">
-																<label class="font-weight-bold">หน่วยงาน : </label>
+																<label>หน่วยงาน : </label>
 																<input type="text" id="user_th_pos_name" name ="user_th_pos_name" value="<?php echo $user_th_pos_name ?>" class="form-control input-sm font-small-3" disabled>
 															</div>
 														</div>
 														<div class="col-md-4">
 															<div class="form-group">
-																<label class="font-weight-bold">ผู้บังคับบัญชา :</label>
+																<label>ผู้บังคับบัญชา :</label>
 																<input type="text" id="user_manager_name" name="user_manager_name" value="<?php echo $user_manager_name ?>" class="form-control input-sm font-small-3" disabled>
 															</div>
 														</div>
@@ -443,12 +443,12 @@ if (inlist('40,41',$crstm_step_code)) {
 													<div class="row">
 														<div class="col-md-4">
 															<div class="form-group">
-																<label class="font-weight-bold">E-mail:</label>
+																<label>E-mail:</label>
 																<input type="text" id="user_email" name="user_email" value="<?php echo $user_email ?>" class="form-control input-sm font-small-3" disabled>
 															</div>
 														</div>
 														<div class="col-md-4">
-															<label class="font-weight-bold">เบอร์โทรศัพท์:</label>
+															<label>เบอร์โทรศัพท์:</label>
 															<class="text-muted font-weight-bold">(999) 999-9999 <font class="text text-danger font-weight-bold"> ***</font>
 																<div class="form-group">
 																	<input type="text" class="form-control phone-inputmask form-control input-sm font-small-3 border-warning" id="phone_mask" name="phone_mask" value="<?php echo $phone_mask ?>" placeholder="ระบุหมายเลขโทรศัพท์" />
@@ -463,7 +463,7 @@ if (inlist('40,41',$crstm_step_code)) {
 													<div class="row">
 														<div class="col-md-4">
 															<div class="form-group">
-																<label class="font-weight-bold">รหัสลูกค้า :<font class="text text-danger font-weight-bold"> ***</font></label>
+																<label>รหัสลูกค้า :<font class="text text-danger font-weight-bold"> ***</font></label>
 																<? if($cr_cust_code !="") {?>	
 																	<input type="text" id="cr_cust_code" name ="cr_cust_code" value="<?php echo $cr_cust_code ?>" class="form-control input-sm font-small-3 border-warning" placeholder="พิมพ์ชื่อ หรือ รหัสลูกค้า" required disabled>
 																<?php } else { ?>
@@ -473,13 +473,13 @@ if (inlist('40,41',$crstm_step_code)) {
 														</div>
 														<div class="col-md-4">
 															<div class="form-group">
-																<label class="font-weight-bold">ชื่อลูกค้า : </label>
+																<label>ชื่อลูกค้า : </label>
 																<input type="text" id="crstm_cus_name1" name ="crstm_cus_name1" value="<?php echo $crstm_cus_name ?>" class="form-control input-sm font-small-3" disabled>
 															</div>
 														</div>
 														<div class="col-md-4">
 															<div class="form-group">
-																<label class="font-weight-bold">เลขประจำตัวผู้เสียภาษี :</label>
+																<label>เลขประจำตัวผู้เสียภาษี :</label>
 																<input type="text" id="cus_tax_nbr3" name="cus_tax_nbr3" value="<?php echo $cus_tax_nbr3 ?>" class="form-control input-sm font-small-3" disabled>
 															</div>
 														</div>
@@ -487,23 +487,23 @@ if (inlist('40,41',$crstm_step_code)) {
 													<div class="row">
 														<div class="col-md-4">
 															<fieldset class="form-group">
-																<label for="placeTextarea" class="font-weight-bold">ที่อยู่ :</label>
+																<label for="placeTextarea">ที่อยู่ :</label>
 																<textarea  name="cus_street" id="cus_street" class="form-control input-sm font-small-3"  id="placeTextarea" rows="3" placeholder="ที่อยู่" style="line-height:1.5rem;" disabled> <?php echo $cus_street; ?></textarea>
 															</fieldset>	
 														</div>
 														<div class="col-md-4">
 															<div class="form-group">
-																<label class="font-weight-bold">จังหวัด :</label>
+																<label>จังหวัด :</label>
 																<input type="text" id="cus_city" name="cus_city" value="<?php echo $cus_city ?>" class="form-control input-sm font-small-3" disabled>
 																<div class="form-group">
-																	<label class="font-weight-bold">ประเทศ :</label>
+																	<label>ประเทศ :</label>
 																	<input type="text" id="cus_country" name="cus_country" value="<?php echo $cus_country ?>" class="form-control input-sm font-small-3" disabled>
 																</div>
 															</div>
 														</div>
 														<div class="col-md-4">
 															<div class="form-group">
-																<label class="font-weight-bold">เงื่อนไขการชำระเงิน :</label>
+																<label>เงื่อนไขการชำระเงิน :</label>
 																<input type="text" id="cus_terms_paymnt" name="cus_terms_paymnt" value="<?php echo $cus_terms_paymnt ?>" class="form-control input-sm font-small-3" disabled><br>
 																
 															</div>
@@ -821,7 +821,7 @@ if (inlist('40,41',$crstm_step_code)) {
 														<div class="row">
 															<!--<div class="col-md-3">
 																<input type="radio"  id="cus_conf_no" name="cus_conf" value="0" <?php if($cus_conf_yes=='0'){ echo "checked"; }?>>
-																<label class="font-weight-bold" for="cus_conf_no"> วงเงินลูกค้าใหม่</label>
+																<label for="cus_conf_no"> วงเงินลูกค้าใหม่</label>
 															</div>-->	
 															<div class="col-md-3">
 																<input type="radio" id="cus_conf_yes" name="cus_conf" value="1" <?php if($cus_conf_yes=='1'){ echo "checked"; }?>>
@@ -838,7 +838,7 @@ if (inlist('40,41',$crstm_step_code)) {
 																<div class="row">
 																	<div class="col-md-3">
 																		<input type="radio"  id="cusold_conf_yes" name="chk_rdo" value="C1" <?php if($cusold_conf_yes=='C1') { echo "checked"; }?>>
-																		<label class="font-weight-bold" for="cusold_conf_yes"> ปรับเพิ่มวงเงิน</label>
+																		<label for="cusold_conf_yes"> ปรับเพิ่มวงเงิน</label>
 																	</div>	
 																	<!--<div class="col-md-3">
 																		<input type="radio"  id="cusold1_conf_yes" name="chk_rdo" value="C2" <?php if($cusold_conf_yes=='C2') { echo "checked"; }?>>
@@ -854,11 +854,11 @@ if (inlist('40,41',$crstm_step_code)) {
 															<div class="row">
 																<div class="col-md-3">
 																	<input type="radio"  id="term_conf_yes" name="rdo_conf1" value="old" <?php if($crstm_chk_term=='old'){ echo "checked"; }?>>
-																	<label class="font-weight-bold" for="cus_conf_yes">เงื่อนไขการชำระเงินเดิม</label>
+																	<label for="cus_conf_yes">เงื่อนไขการชำระเงินเดิม</label>
 																</div>
 																<div class="col-md-3">
 																	<input type="radio"  id="chg_term_conf_yes" name="rdo_conf1" value="change" <?php if($crstm_chk_term=='change'){ echo "checked"; }?>>
-																	<label class="font-weight-bold" for="cus_conf_yes">เปลี่ยนเงื่อนไขการชำระเงินใหม่จาก</label>
+																	<label for="cus_conf_yes">เปลี่ยนเงื่อนไขการชำระเงินใหม่จาก</label>
 																</div>
 															</div>
 															
@@ -871,7 +871,7 @@ if (inlist('40,41',$crstm_step_code)) {
 																	<div class="row">
 																		<div class="col-md-3">
 																			<fieldset>
-																				<label for="check_same" class="font-weight-bold">เงื่อนไขการชำระเงินเดิม:</label>
+																				<label for="check_same">เงื่อนไขการชำระเงินเดิม:</label>
 																			</fieldset>
 																		</div>
 																		<div class="col-md-3">
@@ -879,12 +879,12 @@ if (inlist('40,41',$crstm_step_code)) {
 																		</div>
 																		<div class="col-md-3">
 																			<fieldset>
-																				<label class="font-weight-bold">โปรดระบุเพิ่ม: (ถ้ามี)</label>
+																				<label>โปรดระบุเพิ่ม: (ถ้ามี)</label>
 																			</fieldset>
 																		</div>
 																		<div class="col-md-3">
 																			<div class="form-group">
-																				<!--<label class="font-weight-bold">เปลี่ยนจาก</label>-->
+																				<!--<label>เปลี่ยนจาก</label>-->
 																				<select data-placeholder="Select a doc type ..." class="form-control input-sm border-warning font-small-3 select2" id="term_desc_add" name="term_desc_add" >
 																					<option value="" selected>--- เลือกเงื่อนไขการชำระเงินเพิ่ม ---</option>
 																					<?php
@@ -914,7 +914,7 @@ if (inlist('40,41',$crstm_step_code)) {
 																		<div class="row">
 																			<div class="col-md-3">
 																				<fieldset>
-																					<label for="check_same" class="font-weight-bold">ขอเปลี่ยนเงื่อนไขการชำระเงินใหม่ จาก:</label>
+																					<label for="check_same">ขอเปลี่ยนเงื่อนไขการชำระเงินใหม่ จาก:</label>
 																				</fieldset>
 																			</div>
 																			<div class="col-md-3">
@@ -922,7 +922,7 @@ if (inlist('40,41',$crstm_step_code)) {
 																			</div>
 																			<div class="col-md-2">
 																				<fieldset>
-																					<label class="font-weight-bold">เปลี่ยนเงื่อนไข:</label>
+																					<label>เปลี่ยนเงื่อนไข:</label>
 																				</fieldset>
 																			</div>
 																			<div class="col-md-4">
@@ -1332,15 +1332,15 @@ if (inlist('40,41',$crstm_step_code)) {
 																		<div class="col-md-6"></div>
 																		
 																		<div class="col-md-3">
-																			<label class="font-weight-bold" for="cus_conf_yes">Group:</label>
+																			<label for="cus_conf_yes">Group:</label>
 																		</div>
 																		<div class="col-md-2">
 																			<input type="radio" name="crstm_scgc" id="crstm_scgc" value=true <?php if ($crstm_scgc==true){ echo "checked"; }?>>
-																			<label class="font-weight-bold">Tiles</label>
+																			<label>Tiles</label>
 																		</div>
 																		<div class="col-md-2">
 																			<input type="radio" name="crstm_scgc" id="crstm_scgc1" value=false <?php if ($crstm_scgc==false){ echo "checked"; }?>>
-																			<label class="font-weight-bold">Geoluxe</label>
+																			<label>Geoluxe</label>
 																		</div>
 																		<div class="col-md-5"></div>
 																		<div class="col-md-6">
@@ -1601,7 +1601,7 @@ if (inlist('40,41',$crstm_step_code)) {
 																		
 																		<div class="col-md-12">
 																			<fieldset class="form-group">
-																				<label for="placeTextarea" class="font-weight-bold">ความเห็น / เหตุผลที่เสนอขอวงเงิน : <font class="text text-danger font-weight-bold"> ***</font></label>
+																				<label for="placeTextarea">ความเห็น / เหตุผลที่เสนอขอวงเงิน : <font class="text text-danger font-weight-bold"> ***</font></label>
 																				<textarea  name="crstm_sd_reson" id="crstm_sd_reson" class="form-control textarea-maxlength input-sm font-small-3 border-warning" placeholder="Enter upto 500 characters.." maxlength="500"  rows="5" style="line-height:1.5rem;"><?php echo $crstm_sd_reson; ?></textarea>
 																			</fieldset>	
 																		</div>
@@ -1635,14 +1635,14 @@ if (inlist('40,41',$crstm_step_code)) {
 																		</div>
 																		<div class="col-md-2">
 																			<input type="checkbox"  id="del_reson" name="del_reson" value="1">
-																			<label class="font-weight-bold" for="cus_conf_yes"> ลบรูปภาพ</label>
+																			<label for="cus_conf_yes"> ลบรูปภาพ</label>
 																		</div>
 																		
 																		
 																		<?php if(($crstm_rem_rearward !="") && inlist('0,01',$crstm_step_code)){ ?> 
 																			<div class="col-md-12">
 																				<div class="form-group">
-																					<label for="placeTextarea" class="font-weight-bold">เหตุผลการ Rearward:<font class="text text-danger font-weight-bold"> ***</font></label>
+																					<label for="placeTextarea">เหตุผลการ Rearward:<font class="text text-danger font-weight-bold"> ***</font></label>
 																					<textarea  name="crstm_rem_rearward" id="crstm_rem_rearward" class="form-control input-sm font-small-3" id="placeTextarea" rows="5" style="line-height:1.5rem; background:#99CC33; color:white;"><?php echo $crstm_rem_rearward; ?></textarea>
 																				</div>
 																			</div>
@@ -1652,7 +1652,7 @@ if (inlist('40,41',$crstm_step_code)) {
 																	<div class="row">
 																		<div class="col-md-12">
 																			<div class="form-group">
-																				<label class="font-weight-bold">ข้อมูลโครงการ (ถ้ามี):</label>
+																				<label>ข้อมูลโครงการ (ถ้ามี):</label>
 																			</div>
 																		</div>
 																		
@@ -1905,7 +1905,7 @@ if (inlist('40,41',$crstm_step_code)) {
 																		</div>
 																		<div class="col-md-2">
 																			<input type="checkbox"  id="del_pj" name="del_pj" value="1">
-																			<label class="font-weight-bold" for="cus_conf_yes">ลบรูปภาพ</label>
+																			<label for="cus_conf_yes">ลบรูปภาพ</label>
 																		</div>
 																		
 																		<div class="col-md-4">
@@ -1920,7 +1920,7 @@ if (inlist('40,41',$crstm_step_code)) {
 																		</div>
 																		<div class="col-md-2">
 																			<input type="checkbox"  id="del_pj1" name="del_pj1" value="1">
-																			<label class="font-weight-bold" for="cus_conf_yes">ลบรูปภาพ</label>
+																			<label for="cus_conf_yes">ลบรูปภาพ</label>
 																		</div>
 																	</div>
 																</div>
@@ -2169,16 +2169,14 @@ if (inlist('40,41',$crstm_step_code)) {
 											buttonsStyling: false
 										});
 										} else {
-										clearloadresult();
-										//$('#sample_data').DataTable().ajax.reload(null, false); // call from external function
 										Swal.fire({
 											position: "top-end",
-											type: "success",
-											title: "Save successfully.",
-											showConfirmButton: false,
-											timer: 500,
-											confirmButtonClass: "btn btn-primary",
-											buttonsStyling: false
+										 	type: "success",
+										 	title: "Save successfully.",
+										 	showConfirmButton: false,
+										 	timer: 50000,
+										 	confirmButtonClass: "btn btn-primary",
+										 	buttonsStyling: false
 										});
 										//location.reload(true);
 										clearloadresult();
