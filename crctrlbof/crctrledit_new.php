@@ -651,19 +651,19 @@ include("chkauthcrctrl.php");
 												<div class="row">
 													<div class="col-md-4">
 														<div class="form-group">
-															<label class="font-weight-bold">ชื่อ-สกุล :</label>
+															<label>ชื่อ-สกุล :</label>
 															<input type="text" id="e_user_fullname" name ="e_user_fullname" value="<?php echo $e_user_fullname ?>" class="form-control input-sm font-small-3" disabled>
 														</div>
 													</div>
 													<div class="col-md-4">
 														<div class="form-group">
-															<label class="font-weight-bold">หน่วยงาน : </label>
+															<label>หน่วยงาน : </label>
 															<input type="text" id="user_th_pos_name" name ="user_th_pos_name" value="<?php echo $user_th_pos_name ?>" class="form-control input-sm font-small-3" disabled>
 														</div>
 													</div>
 													<div class="col-md-4">
 														<div class="form-group">
-															<label class="font-weight-bold">ผู้บังคับบัญชา :</label>
+															<label>ผู้บังคับบัญชา :</label>
 															<input type="text" id="user_manager_name" name="user_manager_name" value="<?php echo $user_manager_name ?>" class="form-control input-sm font-small-3" disabled>
 														</div>
 													</div>
@@ -672,12 +672,12 @@ include("chkauthcrctrl.php");
 												<div class="row">
 													<div class="col-md-4">
 														<div class="form-group">
-															<label class="font-weight-bold">E-mail:</label>
+															<label>E-mail:</label>
 															<input type="text" id="user_email" name="user_email" value="<?php echo $user_email ?>" class="form-control input-sm font-small-3" disabled>
 														</div>
 													</div>
 													<div class="col-md-4">
-														<label class="font-weight-bold">เบอร์โทรศัพท์:</label>
+														<label>เบอร์โทรศัพท์:</label>
 														<class="text-muted font-weight-bold">(999) 999-9999 <font class="text text-danger font-weight-bold"> ***</font>
 															<div class="form-group">
 																<input type="text" class="form-control phone-inputmask form-control input-sm font-small-3" id="phone_mask" name="phone_mask" value="<?php echo $crstm_tel ?>"  placeholder="ระบุหมายเลขโทรศัพท์" / >
@@ -688,61 +688,61 @@ include("chkauthcrctrl.php");
 													<div class="row">
 														<div class="col-md-4">
 															<div class="form-group">
-																<label class="font-weight-bold">รหัสลูกค้า :</label>
+																<label>รหัสลูกค้า :</label>
 																<input type="text" id="crstm_cus_nbr" name="crstm_cus_nbr" value="<?php echo $crstm_cus_nbr ?>" class="form-control input-sm font-small-3" >
 															</div>
 														</div>
 														<div class="col-md-4">
 															<div class="form-group">
-																<label class="font-weight-bold">ชื่อลูกค้า : <font class="text text-danger font-weight-bold"> ***</font></label>
+																<label>ชื่อลูกค้า : <font class="text text-danger font-weight-bold"> ***</font></label>
 																<input type="text" id="crstm_cus_name" name="crstm_cus_name" value="<?php echo $crstm_cus_name ?>" class="form-control input-sm font-small-3" placeholder="กรุณากรอกชื่อลูกค้า" >
 															</div>
 														</div>
 														<div class="col-md-4">
 															<div class="form-group">
-																<label class="font-weight-bold">เลขประจำตัวผู้เสียภาษี :<font class="text text-danger font-weight-bold"> ***</font></label>
+																<label>เลขประจำตัวผู้เสียภาษี :<font class="text text-danger font-weight-bold"> ***</font></label>
 																<input type="text" id="crstm_tax_nbr3" name="crstm_tax_nbr3" value="<?php echo $crstm_tax_nbr3 ?>" class="form-control position-maxlength input-sm font-small-3" placeholder="กรุณากรอกเลขประจำตัวผู้เสียภาษี" maxlength="13" >
 															</div>
 														</div>
 														<div class="col-md-4">
 															<div class="form-group">
-																<label class="font-weight-bold">ที่อยู่ :<font class="text text-danger font-weight-bold"> ***</font></label>
+																<label>ที่อยู่ :<font class="text text-danger font-weight-bold"> ***</font></label>
 																<input type="text" id="crstm_address" name="crstm_address" value="<?php echo $crstm_address ?>" class="form-control input-sm font-small-3" placeholder="กรุณากรอกที่อยู่" >
 															</div>
 														</div>
 														<div class="col-md-4">
 															<div class="form-group">
-																<label class="font-weight-bold">ตำบล / แขวง :</label>
+																<label>ตำบล / แขวง :</label>
 																<input type="text" id="crstm_district" name="crstm_district" value="<?php echo $crstm_district ?>" class="form-control input-sm font-small-3" placeholder="กรุณากรอกแขวง/ตำบล" >
 															</div>
 														</div>
 														<div class="col-md-4">
 															<div class="form-group">
-																<label class="font-weight-bold">อำเภอ / เขต :</label>
+																<label>อำเภอ / เขต :</label>
 																<input type="text" id="crstm_amphur" name="crstm_amphur" value="<?php echo $crstm_amphur ?>" class="form-control input-sm font-small-3" >
 															</div>
 														</div>
 														<div class="col-md-4">
 															<div class="form-group">
-																<label class="font-weight-bold">จังหวัด :</label>
+																<label>จังหวัด :</label>
 																<input type="text" id="crstm_province" name="crstm_province" value="<?php echo $crstm_province ?>" class="form-control input-sm font-small-3" >
 															</div>
 														</div>
 														<div class="col-md-2">
 															<div class="form-group">
-																<label class="font-weight-bold">รหัสไปรษณีย์ :</label>
+																<label>รหัสไปรษณีย์ :</label>
 																<input type="text" id="crstm_zip" name="crstm_zip" value="<?php echo $crstm_zip ?>" class="form-control input-sm font-small-3" maxlength="8" >
 															</div>
 														</div>
 														<div class="col-md-2">
 															<div class="form-group">
-																<label class="font-weight-bold">ประเทศ :</label>
+																<label>ประเทศ :</label>
 																<input type="text" id="crstm_country" name="crstm_country" value="<?php echo $crstm_country ?>" class="form-control input-sm font-small-3" >
 															</div>
 														</div>
 														<div class="col-md-4">
 															<div class="form-group">
-																<label class="font-weight-bold">เงื่อนไขการชำระเงิน :</label>
+																<label>เงื่อนไขการชำระเงิน :</label>
 																<select data-placeholder="Select a doc type ..." class="form-control input-sm border-warning font-small-3 select2" id="term_desc_add" name="term_desc_add" >
 																	<option value="" selected>--- เลือกเงื่อนไขการชำระเงินเพิ่ม ---</option>
 																	<?php
@@ -765,23 +765,23 @@ include("chkauthcrctrl.php");
 													<div class="row">
 														<div class="col-md-4">
 															<input type="radio"  id="cus_new" name="cus_conf" value="0" checked>
-															<label class="font-weight-bold" for="cus_conf_no"> ลูกค้าใหม่</label>
+															<label for="cus_conf_no"> ลูกค้าใหม่</label>
 														</div>	
 														
 														<div class="col-md-4">
 															<input type="radio"  id="rdo_cr_limit" name="chk_rdo" value="C4" <?php if($rdo_cr_limit=='C4') { echo "checked"; }?>>
-															<label class="font-weight-bold" for="cus_conf_no"> เสนอขออนุมัติวงเงิน</label>
+															<label for="cus_conf_no"> เสนอขออนุมัติวงเงิน</label>
 														</div>
 														<!-- <div class="col-md-4">
 															<input type="radio"  id="rdo_cr_limit" name="chk_rdo" value="C5" <?php if($rdo_cr_limit=='C5') { echo "checked"; }?>> 
-															<label class="font-weight-bold" for="cus_conf_no"> อื่น ๆ</label>
+															<label for="cus_conf_no"> อื่น ๆ</label>
 														</div> -->
 													</div><br>
 													<div class="cc_display">
 														<div class="row">
 															<div class="col-md-6">
 																<div class="form-group row">
-																	<label class="col-md-6 label-control font-weight-bold" for="userinput1">วันที่เริ่ม :</label>
+																	<label class="col-md-6" for="userinput1">วันที่เริ่ม :</label>
 																	<div class="col-md-6">
 																		<input type="text" name="beg_date_new" id="beg_date_new" value="<?php echo $crstm_cc_date_beg ?>" class="form-control form-control input-sm font-small-3" placeholder="ระบุวันที่เริ่ม" > 
 																	</div>
@@ -789,7 +789,7 @@ include("chkauthcrctrl.php");
 															</div>
 															<div class="col-md-6">
 																<div class="form-group row">
-																	<label class="col-md-4 label-control font-weight-bold" for="userinput1">วันที่สิ้นสุด :</label>
+																	<label class="col-md-4" for="userinput1">วันที่สิ้นสุด :</label>
 																	<div class="col-md-6">
 																		<input type="text" name="end_date_new" id="end_date_new" value="<?php echo $crstm_cc_date_end ?>" class="form-control form-control input-sm font-small-3" placeholder="ระบุวันที่สิ้นสุด" > 
 																	</div>
@@ -797,7 +797,7 @@ include("chkauthcrctrl.php");
 															</div>
 															<div class="col-md-6">
 																<div class="form-group row">
-																	<label class="col-md-6 label-control font-weight-bold" for="userinput1">วงเงิน (บาท) :</label>
+																	<label class="col-md-6" for="userinput1">วงเงิน (บาท) :</label>
 																	<div class="col-md-6">
 																		<input type="text" name="cc_amt1" id="cc_amt1" value="<?php echo $crstm_cc_amt ?>" class="form-control form-control input-sm font-small-3" placeholder="ระบุวงเงินขออนุมัติ" style="color:black;text-align:right" onkeyup="format(this)" onchange="format(this)"> 
 																	</div>
@@ -959,20 +959,20 @@ include("chkauthcrctrl.php");
 														</div>
 														<div class="col-md-6"></div>
 														<div class="col-md-3">
-															<label class="font-weight-bold" for="cus_conf_yes">Group:</label>
+															<label for="cus_conf_yes">Group:</label>
 														</div>
 														<div class="col-md-2">
 															<input type="radio" name="crstm_scgc" id="crstm_scgc" value=true <?php if ($crstm_scgc==true){ echo "checked"; }?>>
-															<label class="font-weight-bold">Tiles</label>
+															<label>Tiles</label>
 														</div>
 														<div class="col-md-2">
 															<input type="radio" name="crstm_scgc" id="crstm_scgc1" value=false <?php if ($crstm_scgc==false){ echo "checked"; }?>>
-															<label class="font-weight-bold">Geoluxe</label>
+															<label>Geoluxe</label>
 														</div>
-														<div class="col-md-5"></div>
+														<div class="col-md-5 mt-3"></div>
 														<div class="col-md-6">
 															<div class="form-group row">
-																<label class="font-weight-bold col-md-6 label-control">ผู้พิจารณา 1 : </label>
+																<label class="col-md-6 label-control font-weight-bold">ผู้พิจารณา 1 : </label>
 																<div class="col-md-6">
 																	<div class="input-group input-group-sm">
 																		<input name="crstm_reviewer" id="crstm_reviewer" <?php echo ($reviewercanedit) ?> value="<?php echo $crstm_reviewer ?>" 
@@ -1031,7 +1031,7 @@ include("chkauthcrctrl.php");
 														<div class="col-md-6 blockRev2" style="display:<?php echo $dis_rev2 ?>"></div>
 														<div class="col-md-6 displayRev2" style="display:<?php echo $chk_rev2 ?>">
 															<div class="form-group row">
-																<label class="font-weight-bold col-md-6 label-control">ผู้พิจารณา 2 : </label>
+																<label class="col-md-6 label-control font-weight-bold">ผู้พิจารณา 2 : </label>
 																<div class="col-md-6">
 																	<div class="input-group input-group-sm">
 																		<input name="crstm_reviewer2" id="crstm_reviewer2" readOnly <?php echo $reviewercanedit ?> value="<?php echo $crstm_reviewer2 ?>" 
@@ -1244,7 +1244,7 @@ include("chkauthcrctrl.php");
 													<div class="row">
 														<div class="col-md-12">
 															<div class="form-group">
-																<label for="placeTextarea" class="font-weight-bold">ความเห็น / เหตุผลที่เสนอขอวงเงิน : <font class="text text-danger font-weight-bold"> ***</font></label>
+																<label for="placeTextarea">ความเห็น / เหตุผลที่เสนอขอวงเงิน : <font class="text text-danger font-weight-bold"> ***</font></label>
 																<textarea  name="crstm_sd_reson" id="crstm_sd_reson" class="form-control textarea-maxlength input-sm font-small-3" placeholder="Enter upto 500 characters.." maxlength="500"  rows="5" style="line-height:1.5rem;"><?php echo $crstm_sd_reson; ?></textarea>
 															</div>	
 														</div>
@@ -1252,7 +1252,7 @@ include("chkauthcrctrl.php");
 														<?php if(($crstm_rem_rearward !="") && inlist('0,01',$crstm_step_code)){ ?> 
 															<div class="col-md-12">
 																<div class="form-group">
-																	<label for="placeTextarea" class="font-weight-bold">เหตุผลการ Rearward:<font class="text text-danger font-weight-bold"> ***</font></label>
+																	<label for="placeTextarea">เหตุผลการ Rearward:<font class="text text-danger font-weight-bold"> ***</font></label>
 																	<textarea  name="crstm_rem_rearward" id="crstm_rem_rearward" class="form-control input-sm font-small-3" id="placeTextarea" rows="5" style="line-height:1.5rem; background:#99CC33; color:white;"><?php echo $crstm_rem_rearward; ?></textarea>
 																</div>
 															</div>
@@ -1287,12 +1287,12 @@ include("chkauthcrctrl.php");
 														</div>
 														<div class="col-md-2">
 															<input type="checkbox"  id="del_reson" name="del_reson" value="1">
-															<label class="font-weight-bold" for="cus_conf_yes">ลบรูปภาพ</label>
+															<label for="cus_conf_yes">ลบรูปภาพ</label>
 														</div>
 														
 														<div class="col-md-12">
 															<div class="form-group">
-																<label class="font-weight-bold">ข้อมูลโครงการ (ถ้ามี):</label>
+																<label>ข้อมูลโครงการ (ถ้ามี):</label>
 															</div>
 														</div>
 														
@@ -1543,7 +1543,7 @@ include("chkauthcrctrl.php");
 														</div>
 														<div class="col-md-2">
 															<input type="checkbox"  id="del_pj" name="del_pj" value="1">
-															<label class="font-weight-bold" for="cus_conf_yes">ลบรูปภาพ</label>
+															<label for="cus_conf_yes">ลบรูปภาพ</label>
 														</div>
 														<div class="col-md-4">
 															<div class="form-group row">
@@ -1557,14 +1557,14 @@ include("chkauthcrctrl.php");
 														</div>
 														<div class="col-md-2">
 															<input type="checkbox"  id="del_pj1" name="del_pj1" value="1">
-															<label class="font-weight-bold" for="cus_conf_yes">ลบรูปภาพ</label>
+															<label for="cus_conf_yes">ลบรูปภาพ</label>
 														</div>
 														
 														<?php if(($iscan_display_c1) || ($iscan_display_c2) || ($iscan_display_c3)) { ?>
 															<div class="col-md-12">
 																<h4 class="form-section text-info"><i class="fa fa-shopping-cart"></i> 2. สำหรับหน่วยงานสินเชื่อ ( 1 )</h4>
 																<div class="form-group">
-																	<label for="placeTextarea" class="font-weight-bold">ความเห็นสินเชื่อ #1 : <font class="text text-danger font-weight-bold"> ***</font></label>
+																	<label for="placeTextarea">ความเห็นสินเชื่อ #1 : <font class="text text-danger font-weight-bold"> ***</font></label>
 																	<textarea  name="crstm_cc1_reson" id="crstm_cc1_reson" class="form-control input-sm font-small-3" id="placeTextarea" rows="5" style="line-height:1.5rem;"><?php echo $crstm_cc1_reson; ?></textarea>
 																</div>	
 															</div>
@@ -1572,7 +1572,7 @@ include("chkauthcrctrl.php");
 															<?php if(($crstm_rem_rearward !="") && inlist('10,11',$crstm_step_code)){ ?> 
 																<div class="col-md-12">
 																	<div class="form-group">
-																		<label for="placeTextarea" class="font-weight-bold">เหตุผลการ Rearward:<font class="text text-danger font-weight-bold"> ***</font></label>
+																		<label for="placeTextarea">เหตุผลการ Rearward:<font class="text text-danger font-weight-bold"> ***</font></label>
 																		<textarea  name="crstm_rem_rearward" id="crstm_rem_rearward" class="form-control input-sm font-small-3" id="placeTextarea" rows="5" style="line-height:1.5rem; background:#99CC33; color:white;"><?php echo $crstm_rem_rearward; ?></textarea>
 																	</div>
 																</div>
@@ -1607,7 +1607,7 @@ include("chkauthcrctrl.php");
 															</div>
 															<div class="col-md-2">
 																<input type="checkbox"  id="del_cr1" name="del_cr1" value="1">
-																<label class="font-weight-bold" for="cus_conf_yes">ลบรูปภาพ</label>
+																<label for="cus_conf_yes">ลบรูปภาพ</label>
 															</div>
 														<?php } ?>	
 														
@@ -1618,7 +1618,7 @@ include("chkauthcrctrl.php");
 														<div class="row">
 															<div class="col-md-12">
 																<div class="form-group">
-																	<label class="font-weight-bold">Upload งบการเงินลูกค้า:</label>
+																	<label>Upload งบการเงินลูกค้า:</label>
 																</div>
 															</div>
 														</div>
@@ -1626,17 +1626,17 @@ include("chkauthcrctrl.php");
 														<div class="row">
 															<div class="col-md-6">
 																<input type="checkbox"  id="dbd_conf_yes" name="web_conf" value="1" <?php if($dbd_conf_yes=='1'){ echo "checked"; }?> >
-																<label class="font-weight-bold" for="cus_conf_yes">งบการเงินจากเว็บไซต์กรมพัฒนาธุรกิจ</label>
+																<label for="cus_conf_yes">งบการเงินจากเว็บไซต์กรมพัฒนาธุรกิจ</label>
 															</div>
 															<div class="col-md-6">
 																<input type="checkbox"  id="oth_conf_yes" name="web_conf" value="2" <?php if($dbd_conf_yes=='2'){ echo "checked"; }?> >
-																<label class="font-weight-bold" for="cus_conf_yes">งบการเงินจากแหล่งอื่นๆ</label>
+																<label for="cus_conf_yes">งบการเงินจากแหล่งอื่นๆ</label>
 															</div>
 														</div>
 														<div class="row">
 															<div class="col-2">
 																<fieldset>
-																	<label for="check_same" class="font-weight-bold">งบการเงินล่าสุด:</label>
+																	<label for="check_same">งบการเงินล่าสุด:</label>
 																</fieldset>
 															</div>
 															
@@ -1660,7 +1660,7 @@ include("chkauthcrctrl.php");
 															
 															<div class="col-2">
 																<fieldset>
-																	<label for="check_same" class="font-weight-bold">งบการเงินล่าสุด:</label>
+																	<label for="check_same">งบการเงินล่าสุด:</label>
 																</fieldset>
 															</div>
 															
@@ -1696,7 +1696,7 @@ include("chkauthcrctrl.php");
 															</div>
 															<div class="col-md-2">
 																<input type="checkbox"  id="del_dbd" name="del_dbd" value="1">
-																<label class="font-weight-bold" for="cus_conf_yes">ลบรูปภาพ</label>
+																<label for="cus_conf_yes">ลบรูปภาพ</label>
 															</div>
 															<div class="col-md-4">
 																<div class="row">
@@ -1712,7 +1712,7 @@ include("chkauthcrctrl.php");
 															</div>
 															<div class="col-md-2">
 																<input type="checkbox"  id="del_dbd1" name="del_dbd1" value="1">
-																<label class="font-weight-bold" for="cus_conf_yes">ลบรูปภาพ</label>
+																<label for="cus_conf_yes">ลบรูปภาพ</label>
 															</div>
 															
 															<div class="card-body  my-gallery" itemscope itemtype="http://schema.org/ImageGallery">		
@@ -1732,14 +1732,14 @@ include("chkauthcrctrl.php");
 																<div class="row">
 																	<div class="col-md-12">
 																		<fieldset class="form-group">
-																			<label for="placeTextarea" class="font-weight-bold">ความเห็นสินเชื่อ #2 : <font class="text text-danger font-weight-bold"> *</font></label>
+																			<label for="placeTextarea">ความเห็นสินเชื่อ #2 : <font class="text text-danger font-weight-bold"> *</font></label>
 																			<textarea  name="crstm_cc2_reson" id="crstm_cc2_reson" class="form-control input-sm font-small-3" id="placeTextarea" rows="5" style="line-height:1.5rem;"><?php echo $crstm_cc2_reson; ?></textarea>
 																		</fieldset>	
 																	</div>
 																	<?php if(($crstm_rem_rearward !="") && inlist('20,21',$crstm_step_code)){ ?> 
 																		<div class="col-md-12">
 																			<div class="form-group">
-																				<label for="placeTextarea" class="font-weight-bold">เหตุผลการ Rearward:<font class="text text-danger font-weight-bold"> ***</font></label>
+																				<label for="placeTextarea">เหตุผลการ Rearward:<font class="text text-danger font-weight-bold"> ***</font></label>
 																				<textarea  name="crstm_rem_rearward" id="crstm_rem_rearward" class="form-control input-sm font-small-3" id="placeTextarea" rows="5" style="line-height:1.5rem; background:#99CC33; color:white;"><?php echo $crstm_rem_rearward; ?></textarea>
 																			</div>
 																		</div>
@@ -1775,27 +1775,27 @@ include("chkauthcrctrl.php");
 																	</div>
 																	<div class="col-md-2">
 																		<input type="checkbox"  id="del_cr2" name="del_cr2" value="1">
-																		<label class="font-weight-bold" for="cus_conf_yes">ลบรูปภาพ</label>
+																		<label for="cus_conf_yes">ลบรูปภาพ</label>
 																	</div>
 																<?php } ?>
 																
 																<?php if(($iscan_display_c3)) { ?> 
 																	<div class="col-md-12">
 																		<fieldset class="form-group">
-																			<label for="placeTextarea" class="font-weight-bold">ความเห็น Manager:<font class="text text-danger font-weight-bold"> ***</font></label>
+																			<label for="placeTextarea">ความเห็น Manager:<font class="text text-danger font-weight-bold"> ***</font></label>
 																			<textarea  name="crstm_mgr_reson" id="crstm_mgr_reson" class="form-control input-sm font-small-3" id="placeTextarea" rows="5" style="line-height:1.5rem;"><?php echo $crstm_mgr_reson; ?></textarea>
 																		</fieldset>	
 																	</div>
 																	<div class="col-md-2">
 																		<input type="radio"  id="mgr_conf_yes" name="mgr_conf" value="1" <?php if($crstm_mgr_rdo=='1'){ echo "checked"; }?> >
-																		<label class="font-weight-bold" for="cus_conf_yes"> เห็นควรอนุมัติวงเงิน</label>
+																		<label for="cus_conf_yes"> เห็นควรอนุมัติวงเงิน</label>
 																	</div>
 																	<div class="col-md-2">
 																		<input type="text" id="crstm_cr_mgr" name="crstm_cr_mgr" class="form-control input-sm font-small-3" value="<?php echo $crstm_cc_amt ?>"  style="color:blue;text-align:right" onkeyup="format(this)" onchange="format(this)">
 																	</div>
 																	<div class="col-md-2">
 																		<input type="radio"  id="mgr_conf_no" name="mgr_conf" value="2" <?php if($crstm_mgr_rdo=='2'){ echo "checked"; }?> >
-																		<label class="font-weight-bold" for="cus_conf_yes">ไม่เห็นควรอนุมัติ</label>
+																		<label for="cus_conf_yes">ไม่เห็นควรอนุมัติ</label>
 																	</div>
 																	
 																	<!--<div class="col-md-6">
@@ -1828,7 +1828,7 @@ include("chkauthcrctrl.php");
 																<div class="row">
 																<div class="col-md-12">
 																<div class="form-group">
-																<label for="placeTextarea" class="font-weight-bold">เหตุผลการ Rearward:<font class="text text-danger font-weight-bold"> ***</font></label>
+																<label for="placeTextarea">เหตุผลการ Rearward:<font class="text text-danger font-weight-bold"> ***</font></label>
 																<textarea  name="crstm_rem_rearward" id="crstm_rem_rearward" class="form-control input-sm font-small-3" id="placeTextarea" rows="5" style="line-height:1.5rem;"><?php echo $crstm_rem_rearward; ?></textarea>
 																</div>
 																</div>
@@ -1996,11 +1996,11 @@ include("chkauthcrctrl.php");
 											type: "success",
 											title: "Save successfully.",
 											showConfirmButton: false,
-											timer: 500,
+											timer: 10000,
 											confirmButtonClass: "btn btn-primary",
 											buttonsStyling: false
 										});
-										location.reload(true);
+										//location.reload(true);
 										$(location).attr('href', 'crctrledit_new.php?crnumber='+json.nb+'&pg='+json.pg+ '&current_tab=30')
 									}
 								},
@@ -2072,7 +2072,7 @@ include("chkauthcrctrl.php");
 											type: "success",
 											title: "Submit successfully.",
 											showConfirmButton: false,
-											timer: 500,
+											timer: 10000,
 											confirmButtonClass: "btn btn-primary",
 											buttonsStyling: false
 										});
@@ -2148,12 +2148,12 @@ include("chkauthcrctrl.php");
 											type: "success",
 											title: "Submit successfully.",
 											showConfirmButton: false,
-											timer: 1500,
+											timer: 10000,
 											confirmButtonClass: "btn btn-primary",
 											buttonsStyling: false
 										});
-										//location.reload(true);
-										clearloadresult();
+										location.reload(true);
+										//clearloadresult();
 										$(location).attr('href', 'crctrlall.php?crnumber='+json.nb+'&pg='+json.pg+ '&current_tab=30')
 									}
 								},
@@ -2229,7 +2229,7 @@ include("chkauthcrctrl.php");
 											type: "success",
 											title: "Submit successfully.",
 											showConfirmButton: false,
-											timer: 500,
+											timer: 10000,
 											confirmButtonClass: "btn btn-primary",
 											buttonsStyling: false
 										});
@@ -2309,7 +2309,7 @@ include("chkauthcrctrl.php");
 											type: "success",
 											title: "Submit successfully.",
 											showConfirmButton: false,
-											timer: 500,
+											timer: 10000,
 											confirmButtonClass: "btn btn-primary",
 											buttonsStyling: false
 										});
@@ -2386,7 +2386,7 @@ include("chkauthcrctrl.php");
 											type: "success",
 											title: "Submit successfully.",
 											showConfirmButton: false,
-											timer: 500,
+											timer: 10000,
 											confirmButtonClass: "btn btn-primary",
 											buttonsStyling: false
 										});
@@ -2721,7 +2721,7 @@ include("chkauthcrctrl.php");
 									type: "success",
 									title: "Successful",
 									showConfirmButton: false,
-									timer: 1500,
+									timer: 10000,
 									confirmButtonClass: "btn btn-primary",
 									buttonsStyling: false,
 									animation: false,
@@ -2771,7 +2771,7 @@ include("chkauthcrctrl.php");
 									type: "success",
 									title: "Successful",
 									showConfirmButton: false,
-									timer: 1500,
+									timer: 10000,
 									confirmButtonClass: "btn btn-primary",
 									buttonsStyling: false,
 									animation: false,

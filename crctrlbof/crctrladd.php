@@ -1078,7 +1078,7 @@
 																			<input type="radio" name="crstm_scgc" id="crstm_scgc1" value="false">
 																			<label>Geoluxe</label>
 																		</div>
-																		<div class="col-md-5"></div>
+																		<div class="col-md-5 mt-3"></div>
 																		<div class="col-md-6 dis_reviewer_block">
 																			<div class="form-group row">
 																				<label class="font-weight-bold col-md-6 label-control">ผู้พิจารณา 1 : </label>
