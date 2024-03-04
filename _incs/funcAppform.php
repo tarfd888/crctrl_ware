@@ -82,18 +82,18 @@ function printMailapp($crstm_nbr,$savefile,$output_folder,$cr_output_filename,$c
 				break;	
 			case "CO. อนุมัติ":
 				if($crstm_scgc == true) {
-					$author_to = findsqlval("author_mstr", "author_salutation", "author_text", $crstm_approve ,$conn);
+					$author_to = findsqlval_aut("author_mstr", "author_salutation", "author_text", $crstm_approve ,$conn);
 				} else {
-					$author_to = findsqlval("author_g_mstr", "author_salutation", "author_text", $crstm_approve ,$conn);
+					$author_to = findsqlval_aut("author_g_mstr", "author_salutation", "author_text", $crstm_approve ,$conn);
 				}
 				$author_to = findsqlval("emp_mstr", "emp_th_pos_name", "emp_email_bus", $crstm_email_app1 ,$conn);
 				$step_app = "60";
 				break;
 			case "กจก. อนุมัติ":
 				if($crstm_scgc == true) {
-					$author_to = findsqlval("author_mstr", "author_salutation", "author_text", $crstm_approve ,$conn);
+					$author_to = findsqlval_aut("author_mstr", "author_salutation", "author_text", $crstm_approve ,$conn);
 				} else {
-					$author_to = findsqlval("author_g_mstr", "author_salutation", "author_text", $crstm_approve ,$conn);
+					$author_to = findsqlval_aut("author_g_mstr", "author_salutation", "author_text", $crstm_approve ,$conn);
 				}
 				$step_app = "60";
 				break;	

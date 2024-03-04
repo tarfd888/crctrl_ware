@@ -851,6 +851,23 @@ function findsqlval($table, $selectfield, $wfield, $vfield,$conn) {
 	}
 	else {return "";}	
 }
+
+function findsqlval_aut($table, $selectfield, $wfield, $vfield,$conn) {
+	if (isset($vfield) && trim($vfield) != "" && !is_null($vfield) ) {
+		$sql = "SELECT " . $selectfield . " AS fvalue FROM " . $table . " Where " . $wfield . "=" . "'" . $vfield . "' and author_active='1' ORDER BY author_id ASC";		
+		$result = sqlsrv_query($conn, $sql);	
+		$row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC);		
+		if (!$row) {
+			return "";
+		}
+		else {
+			return $row["fvalue"];
+		}
+	}
+	else {return "";}	
+}
+
+
 function findsqlval_1($table, $selectfield, $wfield, $vfield,$conn) {
 	if (isset($vfield) && trim($vfield) != "" && !is_null($vfield) ) {
 	//if (isset($vfield)) {
@@ -866,6 +883,7 @@ function findsqlval_1($table, $selectfield, $wfield, $vfield,$conn) {
 	}
 	else {return "";}	
 }
+
 function findsqlval_zc($table, $selectfield, $wfield, $vfield, $wfield1, $vfield1,$conn) {
 	if (isset($vfield) && trim($vfield) != "" && !is_null($vfield) ) {
 	//if (isset($vfield)) {

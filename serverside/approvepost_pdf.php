@@ -43,7 +43,7 @@ clearstatcache();
 	"crstm_mstr.crstm_ch_term, crstm_mstr.crstm_approve, crstm_mstr.crstm_sd_reson, crstm_mstr.crstm_sd_per_mm, crstm_mstr.crstm_cc1_reson, crstm_mstr.crstm_cc2_reson, crstm_mstr.crstm_cus_active,  ".
 	"crstm_mstr.crstm_cr_mgr, crstm_mstr.crstm_cc_date_beg, crstm_mstr.crstm_cc_date_end, crstm_mstr.crstm_cc_amt,crstm_mstr.crstm_detail_mail, crstm_mstr.crstm_mgr_reson,  ".
 	"crstm_mstr.crstm_mail_status, crstm_mstr.crstm_reviewer, crstm_mstr.crstm_noreviewer, crstm_mstr.crstm_scgc,crstm_mstr.crstm_email_app1, crstm_mstr.crstm_email_app2, crstm_mstr.crstm_email_app3, ".
-	"cus_mstr.cus_terms_paymnt FROM crstm_mstr INNER JOIN  ".
+	"cus_mstr.cus_terms_paymnt, crstm_mstr.crstm_stamp_app1, crstm_mstr.crstm_stamp_app2, crstm_mstr.crstm_stamp_app3 FROM crstm_mstr INNER JOIN  ".
 	"emp_mstr ON crstm_mstr.crstm_user = emp_mstr.emp_scg_emp_id INNER JOIN ".
 	"cus_mstr ON crstm_mstr.crstm_cus_nbr = cus_mstr.cus_nbr ".
 	"WHERE (crstm_mstr.crstm_nbr = ?)"; 
@@ -66,11 +66,9 @@ clearstatcache();
 		$crstm_cus_active = html_clear($rec_cus['crstm_cus_active']);
 		$crstm_chk_term = html_clear($rec_cus['crstm_chk_term']);
 		$terms_paymnt = html_clear($rec_cus['cus_terms_paymnt']);
-
 		$crstm_cc_amt = html_clear($rec_cus['crstm_cc_amt']);
 		$crstm_cc_date_beg = dmytx(html_clear($rec_cus['crstm_cc_date_beg']));
 		$crstm_cc_date_end = dmytx(html_clear($rec_cus['crstm_cc_date_end']));
-		
 		$crstm_ch_term =  html_clear($rec_cus['crstm_ch_term']);
 		
 		$crstm_reviewer = strtolower(html_clear($rec_cus['crstm_reviewer']));
@@ -79,6 +77,10 @@ clearstatcache();
 		$crstm_email_app1 = html_clear($rec_cus['crstm_email_app1']);
 		$crstm_email_app2 = html_clear($rec_cus['crstm_email_app2']);
 		$crstm_email_app3 = html_clear($rec_cus['crstm_email_app3']);
+
+		$crstm_stamp_app1 = html_clear($rec_cus['crstm_stamp_app1']);
+		$crstm_stamp_app2 = html_clear($rec_cus['crstm_stamp_app2']);
+		$crstm_stamp_app3 = html_clear($rec_cus['crstm_stamp_app3']);
 		$email_mgr = $user_email;
 		
 		/////////////$email_to =  $crstm_email_app1.",".$crstm_email_app2.",".$email_mrg.","."credit@scg.com";
@@ -211,7 +213,8 @@ clearstatcache();
 
 		$result = sqlsrv_query($conn, $sql);
 
-		if ($crstm_email_app1 != "") {
+		// ส่งอีเมลไปหาผู้อนุมัติคนที่ 1 crstm_email_app1
+		if ($crstm_email_app1 != "" && $crstm_stamp_app1 == "") {
 			$approver1_user_id = $crstm_email_app1;
 			$approve_url = "<a href='".$app_url."/crctrlbof/crctrlapprovemail.php?nbr=".encrypt($crstm_nbr, $dbkey)."&id=".encrypt($approver1_user_id, $dbkey)."&cus=".encrypt($crstm_cus_name, $dbkey)."&act=".encrypt($step_app, $dbkey)."' target='_blank'><font color='DarkGreen'>...Approve</font></a>";
 			$reject_url  = "<a href='".$app_url."/crctrlbof/crctrlapprovemail.php?nbr=".encrypt($crstm_nbr, $dbkey)."&id=".encrypt($approver1_user_id, $dbkey)."&cus=".encrypt($crstm_cus_name, $dbkey)."&act=".encrypt('690', $dbkey)."' target='_blank'><font color='Red'>...Reject </font></a>";
@@ -232,8 +235,6 @@ clearstatcache();
 			จึงเรียนมาเพื่อโปรดพิจารณาอนุมัติ <br>
 			$name_from <br>
 			$emp_th_pos_name <br></font>"; 
-			$mail_message .= $mail_no_reply;
-
 		
 			// ส่งอีเมลไปหาผู้อนุมัติคนที่ 1 crstm_email_app1
 			
@@ -273,7 +274,7 @@ clearstatcache();
 		}
 		
 		// ส่งอีเมลไปหาผู้อนุมัติคนที่ 2 crstm_email_app2
-		if ($crstm_email_app2 != "") {
+		if ($crstm_email_app2 != "" && $crstm_stamp_app2 == "") {
 		
 			// The email send to the approve
 			$approver1_user_id = $crstm_email_app2;
@@ -295,8 +296,6 @@ clearstatcache();
 			จึงเรียนมาเพื่อโปรดพิจารณาอนุมัติ <br>
 			$name_from <br>
 			$emp_th_pos_name <br></font>"; 
-			$mail_message .= $mail_no_reply;
-
 			
 			$fileattach = array();
 			$fileattach_mailname = array();
@@ -337,7 +336,7 @@ clearstatcache();
 		}
 		
 		// ส่งอีเมลไปหาผู้อนุมัติคนที่ 3 crstm_email_app3
-		if ($crstm_email_app3 != "") {
+		if ($crstm_email_app3 != "" && $crstm_stamp_app3 == "") {
 		
 			// The email send to the approve
 			$approver1_user_id = $crstm_email_app3;
@@ -359,8 +358,6 @@ clearstatcache();
 			จึงเรียนมาเพื่อโปรดพิจารณาอนุมัติ <br>
 			$name_from <br>
 			$emp_th_pos_name <br></font>"; 
-			$mail_message .= $mail_no_reply;
-
 			
 			$fileattach = array();
 			$fileattach_mailname = array();

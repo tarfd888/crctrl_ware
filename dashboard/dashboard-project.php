@@ -103,7 +103,7 @@
 														<th>เอกสารเลขที่</th>
 														<th>วันที่</th>
 														<th>รหัสลูกค้า</th>
-														<th> ชื่อลูกค้า</th>
+														<th>ชื่อลูกค้า</th>
 														<th>ผู้ขออนุมัติ</th>
 														<th>Status</th>
 														<th>Action</th>
@@ -117,7 +117,7 @@
 														<th>เอกสารเลขที่</th>
 														<th>วันที่</th>
 														<th>รหัสลูกค้า</th>
-														<th> ชื่อลูกค้า</th>
+														<th>ชื่อลูกค้า</th>
 														<th>ผู้ขออนุมัติ</th>
 														<th>Status</th>
 														<th>Action</th>
@@ -185,6 +185,7 @@
 														<th>วันที่</th>
 														<th>ประเภทลูกค้า</th>
 														<th>ชื่อลูกค้า</th>
+														<th>ผู้ขออนุมัติ</th>
 														<th>Status</th>
 														<th>Action</th>
 														<th></th>
@@ -497,10 +498,20 @@
 
             "columnDefs": [{
                     "className": "text-center",
-                    "targets": [0, 1, 2, 3, 5, 6]
+                    "targets": [0, 1, 2, 3, 6]
                 },
 
             ],
+			
+			"createdRow": function( row, data, dataIndex ) {
+                if ( data['cus_new_info'] == "เปลี่ยนแปลงที่อยู่จดทะเบียน" ) {        
+                    $(row).addClass('text-black bg-info bg-lighten-5');	  	 
+                }
+                if ( data['cus_new_info'] == "เปลี่ยนแปลงชื่อและที่อยู่" ) {        
+                    $(row).addClass('text-black bg-danger bg-lighten-5');	  	 
+                }
+            },
+
             "columns": [{ // Add row no. (Line 1,2,3,n)
                     "data": "id",
                     render: function(data, type, row, meta) {
@@ -519,6 +530,9 @@
                 },
                 {
                     "data": "cus_reg_nme"
+                },
+				{
+                    "data": "cus_create_by"
                 },
                 {
                     "render": function(data, type, row) {
@@ -566,7 +580,7 @@
                     }
                 },
                 {
-                    "targets": [6],
+                    "targets": [7],
                     "render": function(data, type, row, meta) {
                         var btnActionALL = "";
                         var btnAction_Edit = "";

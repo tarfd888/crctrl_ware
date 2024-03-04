@@ -6,9 +6,11 @@
 					<div class="col-md-3 pt-1 ">เริ่มวันที่เริ่มใช้ :</div>
 					<div class="col-md-4 pt-1 border-bottom"><?php echo $cus_effective_date; ?></div>
 					<div class="col-md-2 pt-1 "><?php echo $newcus_txt; ?></div>
-					<div class="col-md-3 pt-1 border-bottom"><?php echo $cus_reg_nme; ?></div>
+					<div class="col-md-3 pt-1 border-bottom"><?php echo $cus_code.' '.$cus_reg_nme; ?></div>
 				</div>
 				<div class="row">
+					<div class="col-md-3  pt-1 "><?php echo $oldaddr_txt; ?></div>
+					<div class="col-md-9  pt-1 border-bottom"><?php echo $cus_old_addr; ?></div>
 					<div class="col-md-3  pt-1 "><?php echo $newaddr_txt; ?></div>
 					<div class="col-md-9  pt-1 border-bottom"><?php echo $cus_mas_addr; ?></div>
 					<div class="col-md-3  pt-1 ">ความเห็นของผู้แทนขาย :</div>

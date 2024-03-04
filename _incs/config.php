@@ -34,6 +34,8 @@ $mail_mgr_credit = "nuchanav@scg.com";
 
 $downloadpath = $web_root."/".$app_folder."/"."_filedownloads/";
 $uploadpath = $web_root."/".$app_folder."/"."_fileuploads/";
+
+// เอาบรรทัดนี้ออกด้วย
 $mail_no_reply = "<span style='color: red'><br><font style='font-family:Cordia New;font-size:19px'> ** อยู่ในระหว่างการเทสระบบใช้กับสยามแวร์ ** <br></font></span>";
 //$mail_no_reply = "<span style='color: red'><br><font style='font-family:Cordia New;font-size:19px'> ** NO-REPLY This eMail (กรุณาอย่า Reply Email ฉบับนี้ เพราะจะไม่มีผู้รับ) ** <br></font></span>";
 

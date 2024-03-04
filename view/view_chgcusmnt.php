@@ -71,7 +71,9 @@ if($rowCounts > 0){
 		$cus_branch = mssql_escape($row['cus_branch']);
 
 		$cus_mas_addr = $cus_reg_addr." ".$cus_district." ".$cus_amphur." ".$cus_prov." ".$cus_zip." ".$cus_country." ".$cus_tax_id." ".$cus_branch;
-		$cus_type_bus = mssql_escape($row['cus_type_bus']);
+		$cus_old_addr = findsqlval("cus_mstr","cus_street+' '+cus_street2+' '+cus_street3+' '+cus_street4+' '+cus_street5+' '+cus_district+' '+cus_city+' '+cus_zipcode","cus_nbr",$cus_code,$conn);
+
+        $cus_type_bus = mssql_escape($row['cus_type_bus']);
 		$cus_tel = mssql_escape($row['cus_tel']);
 		$cus_fax = mssql_escape($row['cus_fax']);
 		$cus_email = mssql_escape($row['cus_email']);
@@ -195,12 +197,14 @@ switch($cus_cond_cust){
         $cardtxt = "เปลี่ยนแปลงที่อยู่จดทะเบียน";
         $newcus_txt = "ชื่อจดทะเบียน :";
         $newaddr_txt = "<span style='color:DarkOrange'>ที่อยู่จดทะเบียน (ใหม่) :</span>";
+        $oldaddr_txt = "<span style='color:DarkBlue'>ที่อยู่จดทะเบียน (เก่า) :</span>";
         $book_case = 2;
         break;  
 	  case "c5" :
 		$cardtxt = "เปลี่ยนแปลงชื่อและที่อยู่";
         $newcus_txt = "<span style='color:DarkOrange'>ชื่อจดทะเบียน (ใหม่) :</span>";
         $newaddr_txt = "<span style='color:DarkOrange'>ที่อยู่จดทะเบียน (ใหม่) :</span>";
+        $oldaddr_txt = "<span style='color:DarkBlue'>ที่อยู่จดทะเบียน (เก่า) :</span>";
         $book_case = 2;
 		break;  	
       default :

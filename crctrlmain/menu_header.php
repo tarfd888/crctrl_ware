@@ -101,6 +101,9 @@
                     </li>
                 </ul>
 
+                <ul class="nav navbar-nav mr-auto float-left">
+                    <h4 class="text-bold-600 orange">Siam Sanitary Ware Industry Co., Ltd</h4>
+                </ul>
                 <ul class="nav navbar-nav float-right">
                     <li class="dropdown dropdown-user nav-item">
                         <a href="#" data-toggle="dropdown" class="dropdown-toggle nav-link dropdown-user-link">
@@ -119,5 +122,6 @@
                 </ul>
             </div>
         </div>
+        
     </div>
 </nav>

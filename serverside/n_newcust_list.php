@@ -46,10 +46,11 @@
 						$rdataArray['cus_tg_cust'] = mssql_escape($rows['cus_tg_cust']);
 						$rdataArray['cus_reg_nme'] = mssql_escape($rows['cus_reg_nme']);
 						$rdataArray['cus_step_code'] = mssql_escape($rows['cus_step_code']);
+						$cus_create_by = mssql_escape($rows['cus_create_by']);
 						$rdataArray['cus_id'] = mssql_escape($rows['cus_id']);
-
 						$cus_cust_type = mssql_escape($rows['cus_cust_type']);
 						$rdataArray['cus_cust_type'] = findsqlval("cus_type_mstr", "cus_type_name", "cus_type_code", $cus_cust_type ,$conn);
+						$rdataArray['cus_create_by'] = findsqlval("emp_mstr", "emp_prefix_th_name+emp_th_firstname+' '+emp_th_lastname", "emp_user_id", $cus_create_by ,$conn);
 						
 						$rdataArray['cus_cond_cust'] = mssql_escape($rows['cus_cond_cust']);
 						$cus_new_info = mssql_escape($rows['cus_cond_cust']);
