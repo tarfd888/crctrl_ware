@@ -33,7 +33,7 @@
             </div>
             <div class="col-md-12">
                 <div class="table-responsive">
-                    <table class="table table-striped table-sm table-hover table-bordered compact nowrap book_table_cr"
+                    <table class="table table-striped table-sm table-hover table-bordered compact nowrap book_table_cr_view"
                         style="width:100%; font-size:0.89em;">
                         <thead>
                             <tr>
@@ -56,7 +56,7 @@
                 <div class="row">
                     <div class="form-group col-12 mt-2 mb-2">
                         <label id="projectinput8" class="file center-block">
-                            <input type="file" name="multiple_files_edit" id="multiple_files_edit" multiple />
+                            <input type="file" name="multiple_files_edit" id="multiple_files_edit" multiple disabled/>
                             <span class="file-custom"></span>
                             <span class="text-muted">Only jpg, png, gif, pdf, xls, doc file
                                 allowed</span>

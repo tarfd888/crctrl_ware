@@ -122,14 +122,14 @@
                       <div class="row">
                         <div class="col-md-4">
                           <div class="form-group">
-                            <label>ชื่อ-สกุล :</label>
+                            <label class="font-weight-bold">ชื่อ-สกุล :</label>
                             <input type="text" id="user_fullname" name="user_fullname"
                               value="<?php echo $user_fullname ?>" class="form-control input-sm font-small-3" disabled>
                           </div>
                         </div>
                         <div class="col-md-4">
                           <div class="form-group">
-                            <label>หน่วยงาน : </label>
+                            <label class="font-weight-bold">หน่วยงาน : </label>
                             <input type="text" id="user_th_pos_name" name="user_th_pos_name"
                               value="<?php echo $user_th_pos_name ?>" class="form-control input-sm font-small-3"
                               disabled>
@@ -137,7 +137,7 @@
                         </div>
                         <div class="col-md-4">
                           <div class="form-group">
-                            <label>ผู้บังคับบัญชา :</label>
+                            <label class="font-weight-bold">ผู้บังคับบัญชา :</label>
                             <input type="text" id="user_manager_name" name="user_manager_name"
                               value="<?php echo $user_manager_name ?>" class="form-control input-sm font-small-3"
                               disabled>
@@ -148,13 +148,13 @@
                       <div class="row">
                         <div class="col-md-4">
                           <div class="form-group">
-                            <label>E-mail:</label>
+                            <label class="font-weight-bold">E-mail:</label>
                             <input type="text" id="user_email" name="user_email" value="<?php echo $user_email ?>"
                               class="form-control input-sm font-small-3" disabled>
                           </div>
                         </div>
                         <div class="col-md-4">
-                          <label>เบอร์โทรศัพท์:</label>
+                          <label class="font-weight-bold">เบอร์โทรศัพท์:</label>
                           <class="text-muted font-weight-bold">(999) 999-9999 <font
                               class="text text-danger font-weight-bold"> ***</font>
                             <div class="form-group">
@@ -168,7 +168,7 @@
                       <div class="row">
                         <div class="col-md-4">
                           <div class="form-group">
-                            <label>รหัสลูกค้า :</label>
+                            <label class="font-weight-bold">รหัสลูกค้า :</label>
                             <input type="text" id="crstm_cus_nbr" name="crstm_cus_nbr"
                               value="<?php echo $crstm_cus_nbr ?>" class="form-control input-sm font-small-3"
                               placeholder="Auto Generate" readonly>
@@ -176,7 +176,7 @@
                         </div>
                         <div class="col-md-4">
                           <div class="form-group">
-                            <label>ชื่อลูกค้า : <font
+                            <label class="font-weight-bold">ชื่อลูกค้า : <font
                                 class="text text-danger font-weight-bold"> ***</font></label>
                             <input type="text" id="crstm_cus_name" name="crstm_cus_name"
                               value="<?php echo $crstm_cus_name ?>" class="form-control input-sm font-small-3"
@@ -185,7 +185,7 @@
                         </div>
                         <div class="col-md-4">
                           <div class="form-group">
-                            <label>เลขประจำตัวผู้เสียภาษี :<font
+                            <label class="font-weight-bold">เลขประจำตัวผู้เสียภาษี :<font
                                 class="text text-danger font-weight-bold"> ***</font></label>
                             <input type="text" id="crstm_tax_nbr3" name="crstm_tax_nbr3" value=""
                               class="form-control position-maxlength input-sm font-small-3"
@@ -194,7 +194,7 @@
                         </div>
                         <div class="col-md-4">
                           <div class="form-group">
-                            <label>ที่อยู่ :<font class="text text-danger font-weight-bold">
+                            <label class="font-weight-bold">ที่อยู่ :<font class="text text-danger font-weight-bold">
                                 ***</font></label>
                             <input type="text" id="crstm_address" name="crstm_address" value=""
                               class="form-control input-sm font-small-3" placeholder="กรุณากรอกที่อยู่" required>
@@ -202,28 +202,28 @@
                         </div>
                         <div class="col-md-4">
                           <div class="form-group">
-                            <label>ตำบล / แขวง :</label>
+                            <label class="font-weight-bold">ตำบล / แขวง :</label>
                             <input type="text" id="crstm_district" name="crstm_district" value=""
                               class="form-control input-sm font-small-3" placeholder="กรุณากรอกแขวง/ตำบล">
                           </div>
                         </div>
                         <div class="col-md-4">
                           <div class="form-group">
-                            <label>อำเภอ / เขต :</label>
+                            <label class="font-weight-bold">อำเภอ / เขต :</label>
                             <input type="text" id="crstm_amphur" name="crstm_amphur" value=""
                               class="form-control input-sm font-small-3" placeholder="กรุณากรอกอำเภอ/เขต">
                           </div>
                         </div>
                         <div class="col-md-4">
                           <div class="form-group">
-                            <label>จังหวัด :</label>
+                            <label class="font-weight-bold">จังหวัด :</label>
                             <input type="text" id="crstm_province" name="crstm_province" value=""
                               class="form-control input-sm font-small-3" placeholder="กรุณากรอกจังหวัด">
                           </div>
                         </div>
                         <div class="col-md-2">
                           <div class="form-group">
-                            <label>รหัสไปรษณีย์ :</label>
+                            <label class="font-weight-bold">รหัสไปรษณีย์ :</label>
                             <input type="text" id="crstm_zip" name="crstm_zip" value=""
                               class="form-control input-sm font-small-3" maxlength="8"
                               placeholder="กรุณากรอกรหัสไปรษณีย์">
@@ -231,14 +231,14 @@
                         </div>
                         <div class="col-md-2">
                           <div class="form-group">
-                            <label>ประเทศ :</label>
+                            <label class="font-weight-bold">ประเทศ :</label>
                             <input type="text" id="crstm_country" name="crstm_country" value=""
                               class="form-control input-sm font-small-3" placeholder="กรุณากรอกประเทศ">
                           </div>
                         </div>
                         <div class="col-md-4">
                           <div class="form-group">
-                            <label>เงื่อนไขการชำระเงิน :</label>
+                            <label class="font-weight-bold">เงื่อนไขการชำระเงิน :</label>
                             <select data-placeholder="Select a doc type ..."
                               class="form-control input-sm border-warning font-small-3 select2" id="term_desc_add"
                               name="term_desc_add">
@@ -262,17 +262,17 @@
                       <div class="row">
                         <div class="col-md-4">
                           <input type="radio" id="cus_new" name="cus_conf" value="0" checked>
-                          <label for="cus_conf_no"> ลูกค้าใหม่</label>
+                          <label class="font-weight-bold" for="cus_conf_no"> ลูกค้าใหม่</label>
                         </div>
 
                         <div class="col-md-4">
                           <input type="radio" id="cus_conf_yes" name="chk_rdo" value="C4"
                             <?php if($cus_conf_yes=='C4') { echo "checked"; }?>>
-                          <label for="cus_conf_no"> เสนอขออนุมัติวงเงิน</label>
+                          <label class="font-weight-bold" for="cus_conf_no"> เสนอขออนุมัติวงเงิน</label>
                         </div>
                         <!-- <div class="col-md-4">
 															<input type="radio"  id="cus_conf_no" name="chk_rdo" value="C5"  >
-															<label for="cus_conf_no"> อื่น ๆ</label>
+															<label class="font-weight-bold" for="cus_conf_no"> อื่น ๆ</label>
 														</div> -->
                       </div><br>
 
@@ -280,7 +280,7 @@
                         <div class="row">
                           <div class="col-md-6">
                             <div class="form-group row">
-                              <label class="col-md-6" for="userinput1">วันที่เริ่ม
+                              <label class="col-md-6 label-control font-weight-bold" for="userinput1">วันที่เริ่ม
                                 :</label>
                               <div class="col-md-6">
                                 <input type="text" name="beg_date_new" id="beg_date_new"
@@ -290,7 +290,7 @@
                           </div>
                           <div class="col-md-6">
                             <div class="form-group row">
-                              <label class="col-md-4" for="userinput1">วันที่สิ้นสุด
+                              <label class="col-md-4 label-control font-weight-bold" for="userinput1">วันที่สิ้นสุด
                                 :</label>
                               <div class="col-md-6">
                                 <input type="text" name="end_date_new" id="end_date_new"
@@ -300,7 +300,7 @@
                           </div>
                           <div class="col-md-6">
                             <div class="form-group row">
-                              <label class="col-md-6" for="userinput1">วงเงิน (บาท)
+                              <label class="col-md-6 label-control font-weight-bold" for="userinput1">วงเงิน (บาท)
                                 :</label>
                               <div class="col-md-6">
                                 <input type="text" name="cc_amt1" id="cc_amt1"
@@ -378,17 +378,17 @@
                         </div>
                         <div class="col-md-6"></div>
                         <div class="col-md-3">
-                          <label for="cus_conf_yes">Group:</label>
+                          <label class="font-weight-bold" for="cus_conf_yes">Group:</label>
                         </div>
                         <div class="col-md-2">
                           <input type="radio" name="crstm_scgc" id="crstm_scgc" value="true">
-                          <label>Tiles</label>
+                          <label class="font-weight-bold">Tiles</label>
                         </div>
                         <div class="col-md-2">
                           <input type="radio" name="crstm_scgc" id="crstm_scgc1" value="false">
-                          <label>Geoluxe</label>
+                          <label class="font-weight-bold">Geoluxe</label>
                         </div>
-                        <div class="col-md-5 mt-3"></div>
+                        <div class="col-md-5"></div>
                         <div class="col-md-6 dis_reviewer_block">
                           <div class="form-group row">
                             <label class="font-weight-bold col-md-6 label-control">ผู้พิจารณา 1 : </label>
@@ -620,7 +620,7 @@
                       <div class="row">
                         <div class="col-md-12">
                           <fieldset class="form-group">
-                            <label for="placeTextarea">ความเห็น / เหตุผลที่เสนอขอวงเงิน : <font
+                            <label for="placeTextarea" class="font-weight-bold">ความเห็น / เหตุผลที่เสนอขอวงเงิน : <font
                                 class="text text-danger font-weight-bold"> ***</font></label>
                             <textarea name="crstm_sd_reson" id="crstm_sd_reson"
                               class="form-control textarea-maxlength input-sm font-small-3"
@@ -651,7 +651,7 @@
                       <div class="row">
                         <div class="col-md-12">
                           <div class="form-group">
-                            <label>ข้อมูลโครงการ (ถ้ามี):</label>
+                            <label class="font-weight-bold">ข้อมูลโครงการ (ถ้ามี):</label>
                           </div>
                         </div>
 
@@ -930,13 +930,8 @@
   <div class="sidenav-overlay"></div>
   <div class="drag-target"></div>
   <!-- BEGIN: Footer-->
-  <footer class="footer footer-static footer-light navbar-border">
-    <p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2"><span
-        class="float-md-left d-block d-md-inline-block">Copyright &copy; 2020 <a class="text-bold-800 grey darken-2"
-          href="https://1.envato.market/pixinvent_portfolio" target="_blank">PIXINVENT </a></span><span
-        class="float-md-right d-none d-lg-block">Power by IT Business Solution Team <i
-          class="feather icon-heart pink"></i></span></p>
-  </footer>
+  <? include("../crctrlmain/menu_footer.php"); ?>
+  
   <script src="<?php echo BASE_DIR;?>/theme/app-assets/vendors/js/vendors.min.js"></script>
   <script src="<?php echo BASE_DIR;?>/theme/app-assets/vendors/js/pickers/dateTime/moment-with-locales.min.js"></script>
   <script src="<?php echo BASE_DIR;?>/theme/app-assets/vendors/js/pickers/dateTime/bootstrap-datetimepicker.min.js"></script>
@@ -1025,7 +1020,7 @@
                   type: "success",
                   title: "Submit successfully.",
                   showConfirmButton: false,
-                  timer: 10000,
+                  timer: 500,
                   confirmButtonClass: "btn btn-primary",
                   buttonsStyling: false
                 });
@@ -1103,7 +1098,7 @@
                   type: "success",
                   title: "Submit successfully.",
                   showConfirmButton: false,
-                  timer: 10000,
+                  timer: 500,
                   confirmButtonClass: "btn btn-primary",
                   buttonsStyling: false
                 });
@@ -1198,7 +1193,7 @@
               type: "success",
               title: "Successful",
               showConfirmButton: false,
-              timer: 10000,
+              timer: 1500,
               confirmButtonClass: "btn btn-primary",
               buttonsStyling: false,
               animation: false,

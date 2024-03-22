@@ -78,7 +78,7 @@ $action_post = html_escape($_POST['action']);
 				$sale_fullname = $emp_prefix_th_name . $emp_th_firstname ." ". $emp_th_lastname;
 			}
 		///// Reviewer approve ระบบส่งเมลจาก sale ไปถึง cr1 Send email Sales ---> Cr1 เ
-			if ($crstm_approve_select=="111") {   // reviewer approve 
+		if ($crstm_approve_select=="111") {   // reviewer approve 
 
 				//เก็บประวัติการดำเนินการ
 				$cr_ap_f_step = "0";  // Draft
@@ -175,7 +175,7 @@ $action_post = html_escape($_POST['action']);
 		} // reviewer approve 
 		
 		///// Revise --- > Sale
-			if ($crstm_approve_select=="112") {   // Revise
+		if ($crstm_approve_select=="112") {   // Revise
 				//ดึงรายชื่อ email ของคนที่มี role Action_View1 ทุกคน
 				$params = array($crstm_approved_by);
 				$query_emp_detail = "SELECT * FROM emp_mstr where emp_email_bus = ? ";
@@ -234,7 +234,7 @@ $action_post = html_escape($_POST['action']);
 		} ///// Revise --- > Sale
 		
 		///// อนก. อนุมัติ email 
-			if ($crstm_approve_select=="60") {   // เคส อนก. อนุมัติผ่านเมล
+		if ($crstm_approve_select=="60") {   // เคส อนก. อนุมัติผ่านเมล
 				$crstm_approved_by = $crstm_approved_by;
 					//เก็บประวัติการดำเนินการ
 				$cr_ap_f_step = "50";  

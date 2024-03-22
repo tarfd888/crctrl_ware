@@ -23,6 +23,11 @@ $http_host = "http://".$_SERVER['HTTP_HOST']."/"; //For Test
 $app_url = $http_host."$app_folder";
 define("BASE_DIR",$app_url);
 
+// root saim ware
+$app_scgc_url = $http_host."crctrl_uat_ph3_1";
+define("BASE_SCGC_DIR",$app_scgc_url);
+
+
 //$web_version = "Version : 2.1 (30/09/2022)";
 $web_version = "Version : 2.2 (16/11/2023)";
 

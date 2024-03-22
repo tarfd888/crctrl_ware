@@ -6,6 +6,7 @@
 	include("../_incs/acunx_cookie_var.php");
 	include("../_incs/acunx_csrf_var.php");
 	
+	
 	if (($_SERVER['REQUEST_METHOD'] == 'POST')) {
 		if (!matchToken($csrf_key, $user_login)) {
 			echo "System detect CSRF attack!!";
@@ -60,9 +61,13 @@
 						<div class="row breadcrumbs-top d-inline-block">
 							<div class="breadcrumb-wrapper col-12">
 								<ol class="breadcrumb">
-									<li class="breadcrumb-item"><a href="../crctrlbof/crctrlall.php">Home</a>
+									<li class="breadcrumb-item"><a href="../newcust/newcust_list.php">Home</a>
 									</li>
-									<li class="breadcrumb-item active"><font color="40ADF4">List Document</font></li>
+									<!--<li class="breadcrumb-item"><a href="#">DataTables</a>
+										</li>-->
+									<li class="breadcrumb-item active">
+										<font color="40ADF4">List รายการขออนุมัติแต่งตั้งลูกค้าใหม่/สาขาใหม่/เปลี่ยนแปลง</font>
+									</li>
 								</ol>
 							</div>
 						</div>
@@ -95,7 +100,7 @@
 												<table id="custsp_list" class="table table-sm table-hover table-bordered compact nowrap " style="width:100%;">
 													<!--dt-responsive nowrap-->
 													<thead class="text-center" style="background-color:#f1f1f1;">
-														<tr class="bg-info text-white font-weight-bold">
+														<tr class="text-center" style="background-color:#F3E2FF;">
 															<th>No.</th>
 															<th>เอกสารเลขที่</th>
 															<th>วันที่</th>
@@ -109,7 +114,7 @@
 													<tbody>
 													</tbody>
 													<tfoot>
-													<tr class="bg-info text-white font-weight-bold">
+														<tr class="text-center" style="background-color:#F3E2FF;">
 															<th>No.</th>
 															<th>เอกสารเลขที่</th>
 															<th>วันที่</th>
@@ -155,9 +160,7 @@
 <div class="sidenav-overlay"></div>
 <div class="drag-target"></div>
 <!-- BEGIN: Footer-->
-<footer class="footer footer-static footer-light navbar-border">
-	<p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2"><span class="float-md-left d-block d-md-inline-block">Copyright &copy; 2020 <a class="text-bold-800 grey darken-2" href="https://1.envato.market/pixinvent_portfolio" target="_blank">PIXINVENT </a></span><span class="float-md-right d-none d-lg-block">Power by IT Business Solution Team <i class="feather icon-heart pink"></i></span></p>
-</footer>
+<? include("../crctrlmain/menu_footer.php"); ?>
 <!-- END: Footer-->
 <script src="<?php echo BASE_DIR;?>/theme/app-assets/vendors/js/vendors.min.js"></script>
 <script src="<?php echo BASE_DIR;?>/theme/app-assets/js/core/app-menu.js"></script>
@@ -318,7 +321,7 @@
 				],
 				"createdRow": function( row, data, dataIndex ) {
 						if ( data['crstm_cus_active'] == "0" ) {        
-							$(row).addClass('text-black bg-info bg-lighten-5');	  	 
+							$(row).addClass('text-black bg-success bg-lighten-5');	  	 
 						}
 					},
 					

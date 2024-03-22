@@ -207,7 +207,20 @@
 		}
 		if($crstm_email_app1!=""){
 			$app1_name = findsqlval("emp_mstr","emp_prefix_th_name+emp_th_firstname+'  '+emp_th_lastname+ ' (' +emp_th_pos_name + ')'","emp_email_bus",$crstm_email_app1,$conn);	
-		}
+		} 
+		// กรณี emp_th_pos_name เป็นค่าช่องว่าง
+		/* $params = array($crstm_email_app1);
+		$query_emp_detail = "SELECT * FROM emp_mstr where emp_email_bus = ? ";
+		$result_emp_detail = sqlsrv_query($conn, $query_emp_detail,$params);
+		$rec_emp = sqlsrv_fetch_array($result_emp_detail, SQLSRV_FETCH_ASSOC);
+		if ($rec_emp) {
+			$emp_prefix_th_name = html_clear($rec_emp['emp_prefix_th_name']);
+			$emp_th_firstname = html_clear($rec_emp['emp_th_firstname']);
+			$emp_th_lastname = html_clear($rec_emp['emp_th_lastname']);
+			$emp_th_pos_name = html_clear($rec_emp['emp_th_pos_name']);
+			$app1_name = $emp_prefix_th_name ." " . $emp_th_firstname ." ". $emp_th_lastname ."(". $emp_th_pos_name .")"  ;
+		}  */
+
 		if($crstm_email_app2!=""){
 			$app2_name = findsqlval("emp_mstr","emp_prefix_th_name+emp_th_firstname+'  '+emp_th_lastname+ ' (' +emp_th_pos_name + ')'","emp_email_bus",$crstm_email_app2,$conn);	
 		}
@@ -683,13 +696,13 @@ switch ($fin_img) {
 						</div></br>
 						<!-- <h3 class="content-header-title mb-0"><?php echo $crstm_nbr; ?></h3> -->
 					</div>
-					<?php if (substr($crstm_step_code,0,1) != 6 && inlist($user_role,'ADMIN')) { ?>
+					<?php if (substr($crstm_step_code,0,1) != 6 && $crstm_step_code != "42" && inlist($user_role,'ADMIN')) { ?>
 						<div class="content-header-right col-md-6 col-12">
 							<div class="btn-group float-md-right">
 								<button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-settings mr-1"></i>Action</button>
 									<div class="dropdown-menu arrow">
 										<a class="dropdown-item blue" href="#div_frm_recall" data-toggle="modal"><i class="fa fa-undo mr-1"></i> Recall Email</a>
-										<a class="dropdown-item blue" href="#div_frm_reject" data-toggle="modal"><i class="fa fa-times-circle mr-1"></i>ยกเลิกใบขออนุมัติวงเงินสินเชื่อ</a>
+										<a class="dropdown-item danger" href="#div_frm_reject" data-toggle="modal"><i class="fa fa-times-circle mr-1"></i>ยกเลิกใบขออนุมัติวงเงินสินเชื่อ</a>
 									</div>
 							</div>
 						</div>
@@ -701,10 +714,13 @@ switch ($fin_img) {
 						<div class="row">
 							<div class="col-12">
 								<div class="card">
-									<div class="card-header mt-1 pt-0 pb-0" >
+									<div class="card-header mt-1 pt-0 pb-1" >
 										<a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
 										<div class="heading-elements">
-											<ul class="list-inline mb-0">                                           
+											<ul class="list-inline mb-0"> 
+												<?php if (inlist("42",$crstm_step_code)) {  ?>
+													<button class="btn btn-sm btn-danger btn-min-width btn-glow mr-1 mb-1"><i class="fa fa-bell"></i> เอกสารยกเลิก</button>
+												<?php } ?>                                          
 												<li><a title="Click to go back,hold to see history" data-action="reload"><i class="fa fa-reply-all" onclick="javascript:window.history.back();"></i></a></li>
 												<li><a title="Click to expand the screen" data-action="expand"><i class="ft-maximize"></i></a></li>
 											</ul>
@@ -807,9 +823,8 @@ switch ($fin_img) {
 		<div class="drag-target"></div>
 		
 		<!-- BEGIN: Footer-->
-		<footer class="footer footer-static footer-light navbar-border">
-			<p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2"><span class="float-md-left d-block d-md-inline-block">Copyright &copy; 2020 <a class="text-bold-800 grey darken-2" href="https://1.envato.market/pixinvent_portfolio" target="_blank">PIXINVENT </a></span><span class="float-md-right d-none d-lg-block">Power by IT Business Solution Team <i class="feather icon-heart pink"></i></span></p>
-		</footer>
+		<? include("../crctrlmain/menu_footer.php"); ?>
+
 		<script src="<?php echo BASE_DIR;?>/theme/app-assets/vendors/js/vendors.min.js"></script>
 		<script src="<?php echo BASE_DIR;?>/theme/app-assets/vendors/js/pickers/dateTime/moment-with-locales.min.js"></script>
 		<script src="<?php echo BASE_DIR;?>/theme/app-assets/vendors/js/pickers/dateTime/bootstrap-datetimepicker.min.js"></script>

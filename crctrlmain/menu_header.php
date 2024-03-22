@@ -19,6 +19,8 @@
                 <ul class="nav navbar-nav mr-auto float-left">
                     <li class="nav-item d-none d-md-block"><a class="nav-link nav-menu-main menu-toggle hidden-xs"
                             href="#"><i class="ft-menu"> </i></a></li>
+                    <li class="nav-item mega-dropdown"><a class="nav-link" href="../dashboard/dashboard-project.php">Home</a>
+                    </li>
                     <li class="dropdown nav-item mega-dropdown"><a class="dropdown-toggle nav-link" href="#"
                             data-toggle="dropdown">Menu</a>
                         <ul class="mega-dropdown-menu dropdown-menu row">
@@ -102,9 +104,13 @@
                 </ul>
 
                 <ul class="nav navbar-nav mr-auto float-left">
-                    <h4 class="text-bold-600 orange">Siam Sanitary Ware Industry Co., Ltd</h4>
+                    <h4 class="text-bold-600" style="color:#9F8FC9;">SIAM SANITARY WARE INDUSTRY CO., LTD.</h4> 
                 </ul>
                 <ul class="nav navbar-nav float-right">
+                    <li class="dropdown dropdown-language nav-item"><a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-home"></i><span>เลือกบริษัท</span><span class="selected-language"></span></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-flag"><a class="dropdown-item" href="../../crctrl_uat_ph3_1/login.php"><i class="flag-icon flag-icon-gb"></i> SCGC</a></div>
+                    </li>
+
                     <li class="dropdown dropdown-user nav-item">
                         <a href="#" data-toggle="dropdown" class="dropdown-toggle nav-link dropdown-user-link">
                             <span class="avatar avatar-online"><img
